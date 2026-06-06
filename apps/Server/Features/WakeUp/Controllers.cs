@@ -6,7 +6,7 @@ public static class WakeUpCtrl
 {
   public static async Task<IResult> WakeUp()
   {
-    await Task.Delay(5000);
+    // await Task.Delay(5000);
 
     return Res.Json(200, "Ops I di not listen the alarm");
   }
