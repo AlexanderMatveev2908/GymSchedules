@@ -7,3 +7,16 @@
     0 0 20px $clr,
     0 0 25px $clr;
 }
+
+@mixin app__scale($up, $down) {
+  @apply transition-all duration-300;
+
+  &:enabled:hover {
+    transform: scale($up);
+  }
+
+  &:enabled:active {
+    transform: scale($down);
+    @apply duration-75;
+  }
+}
