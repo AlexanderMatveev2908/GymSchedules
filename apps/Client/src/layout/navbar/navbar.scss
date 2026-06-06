@@ -1,0 +1,4 @@
+.root {
+  z-index: 100;
+  @apply fixed top-0 left-0 h-[100px] w-full border-b-[3px] border-[whitesmoke] bg-neutral-950;
+}

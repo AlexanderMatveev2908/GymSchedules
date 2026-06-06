@@ -25,6 +25,14 @@
   --neutral__950: #0a0a0a;
 }
 
+* {
+  font-family: 'Sour Gummy', serif;
+}
+
+html {
+  @apply bg-neutral-950;
+}
+
 button {
   appearance: none;
 }
@@ -39,4 +47,8 @@ button:disabled {
 
 button:disabled:hover {
   @apply cursor-not-allowed;
+}
+
+a:hover {
+  @apply cursor-pointer;
 }
