@@ -43,5 +43,3 @@ The UI and layout are built following the official design from [Frontend Mentor]
 - **Docker** — Containerized deployment for consistent local development and production environments
 - **Fly.io** — Cloud deployment platform used for hosting and scaling the backend infrastructure
 - **Cloudinary** — Cloud-based media management service used for secure image uploads, storage, optimization, and delivery
-
----
