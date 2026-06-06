@@ -1,3 +1,5 @@
+import { AuthLayout } from '@/pages/auth_layout/auth-layout';
+import { RegisterPage } from '@/pages/auth_layout/register_page/register-page';
 import { HomePage } from '@/pages/home_page/home-page';
 import { NotFoundPage } from '@/pages/not_found_page/not-found-page';
 import { NoticePage } from '@/pages/notice_page/notice-page';
@@ -11,6 +13,16 @@ export const routes: Routes = [
   {
     path: 'notice',
     component: NoticePage,
+  },
+  {
+    path: 'auth',
+    component: AuthLayout,
+    children: [
+      {
+        path: 'register',
+        component: RegisterPage,
+      },
+    ],
   },
   {
     path: '**',

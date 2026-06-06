@@ -1,7 +1,7 @@
 export type EnvModeT = 'development' | 'production' | 'test';
 
 export class EnvVars {
-  public static readonly mode: EnvModeT = 'production';
+  public static readonly mode: EnvModeT = 'development';
   public static readonly backURLDev: string = 'https://localhost/api/v1';
   public static readonly backURL: string = 'https://gym-schedules-server.fly.dev/api/v1';
   public static readonly frontURLDev: string = 'https://localhost';
