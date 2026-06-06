@@ -1,0 +1,22 @@
+<app-bg-black [isBlack]="sidebarSlice.sidebarState().isOpen" [zIndex]="500" />
+
+<div
+  class="root"
+  [ngClass]="
+    sidebarSlice.sidebarState().isOpen
+      ? 'translate-x-0 opacity-100'
+      : 'translate-x-[100%] opacity-0'
+  "
+>
+  <div class="root__email">
+    <span> john@gmail.com </span>
+  </div>
+
+  <div class="root__links">
+    @for (lk of linksNonLoggedUiFct.links; track lk.id) {
+      <a (click)="sidebarSlice.toggleSidebar()" [routerLink]="lk.url" class="links__item">
+        <span>{{ lk.label }}</span>
+      </a>
+    }
+  </div>
+</div>
