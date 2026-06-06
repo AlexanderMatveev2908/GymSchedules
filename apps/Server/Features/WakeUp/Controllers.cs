@@ -4,7 +4,7 @@ namespace Server.FeaturesNS.WakeUpNS;
 
 public static class WakeUpCtrl
 {
-  public static async Task<IResult> WakeUp()
+  public static IResult WakeUp()
   {
     // await Task.Delay(5000);
 

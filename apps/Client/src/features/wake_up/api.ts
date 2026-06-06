@@ -41,10 +41,11 @@ export class UseWakeUpApi {
     return this.http.get<ResApiT<void>>('/wake-up').pipe(
       retry({
         count: this.MAX_CALLS,
-        delay: () => timer(this.RETRY_DELAY),
-      }),
-      tap((res) => {
-        LibLog.main('poll response', res);
+        delay: (err, retryCount) => {
+          LibLog.main(`Retry ${retryCount}/${this.MAX_CALLS}`, err);
+
+          return timer(this.RETRY_DELAY);
+        },
       }),
       tap(() => {
         this.toastSlice.openToast({
