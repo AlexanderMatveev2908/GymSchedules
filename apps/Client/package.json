@@ -5,7 +5,7 @@
     "install_pkg": "yarn install",
     "dev": "ng serve --port 3001 --live-reload",
     "build": "ng build",
-    "start": "PORT=3001 node dist/client/server/server.mjs"
+    "start": "PORT=3001 node dist/Client/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
