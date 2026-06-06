@@ -6,3 +6,9 @@ export type ElDomT = OrNone<HTMLElement>;
 export type RefDomT = Optional<ElementRef<HTMLElement>>;
 
 export type RefTemplateT = Optional<TemplateRef<HTMLElement>>;
+
+export interface LinkSidebar {
+  url: string;
+  label: string;
+  id: string;
+}

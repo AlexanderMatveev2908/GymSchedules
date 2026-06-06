@@ -1,7 +1,7 @@
 @use 'exports/mix.scss' as mix;
 
 .root {
-  z-index: 100;
+  z-index: 2000;
 
   @apply fixed top-0 left-0 h-[100px] w-full border-b-[3px] border-[whitesmoke] bg-neutral-950 flex justify-between items-center px-5;
 
