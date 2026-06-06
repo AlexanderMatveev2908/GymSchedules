@@ -43,6 +43,9 @@ export class UseWakeUpApi {
         count: this.MAX_CALLS,
         delay: () => timer(this.RETRY_DELAY),
       }),
+      tap((res) => {
+        LibLog.main('poll response', res);
+      }),
       tap(() => {
         this.toastSlice.openToast({
           eventT: 'OK',
