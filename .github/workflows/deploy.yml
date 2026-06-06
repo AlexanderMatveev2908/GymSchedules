@@ -12,11 +12,11 @@ jobs:
       fail-fast: false
       matrix:
         app:
-          - name: invoices-app-client
+          - name: gym-schedules-client
             dir: ./apps/Client
             token: GYM_SCHEDULES__CLIENT
 
-          - name: invoices-app-server
+          - name: gym-schedules-server
             dir: ./apps/Server
             token: GYM_SCHEDULES__SERVER
 
