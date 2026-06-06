@@ -1,4 +1,5 @@
 import { AuthLayout } from '@/pages/auth_layout/auth-layout';
+import { LoginPage } from '@/pages/auth_layout/login_page/login-page';
 import { RegisterPage } from '@/pages/auth_layout/register_page/register-page';
 import { HomePage } from '@/pages/home_page/home-page';
 import { NotFoundPage } from '@/pages/not_found_page/not-found-page';
@@ -21,6 +22,10 @@ export const routes: Routes = [
       {
         path: 'register',
         component: RegisterPage,
+      },
+      {
+        path: 'login',
+        component: LoginPage,
       },
     ],
   },
