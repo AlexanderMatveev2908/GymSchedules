@@ -5,6 +5,7 @@ using Server.LibNS.ShapeNS;
 using Server.LibNS.TokensNS;
 using Server.ModelsNS.RefreshTokensNS;
 using Server.ModelsNS.UserNS;
+using Server.TypesNS.AuthNS;
 using Server.TypesNS.UserNS;
 
 namespace Server.FeaturesNS.AuthNS;
@@ -32,28 +33,16 @@ public static class AuthPostCtrl
       db.User.Add(newUser);
       await db.SaveChangesAsync();
 
-      string refreshToken = RefreshTokensLib.Create();
-      RefreshToken dbRefreshToken = new()
-      {
-        UserId = newUser.Id,
-        TokenHash = RefreshTokensLib.Hash(refreshToken),
-        // ! to set higher in prod 
-        ExpiresAt = DateTime.UtcNow.AddMinutes(60)
-      };
+      var (
+      refreshToken,
+      dbRefreshToken,
+      accessToken
+  ) = genPairTokens(newUser);
 
       db.RefreshToken.Add(dbRefreshToken);
       await db.SaveChangesAsync();
 
-      string accessToken = JwtLib.Create(newUser);
-
-      ctx.Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
-      {
-        HttpOnly = true,
-        Secure = true,
-        SameSite = SameSiteMode.Lax,
-        // ! to set higher in prod 
-        Expires = DateTimeOffset.UtcNow.AddMinutes(60)
-      });
+      ApplyRefreshCookie(ctx, refreshToken);
 
       await trx.CommitAsync();
 
@@ -98,14 +87,81 @@ public static class AuthPostCtrl
          await db.User.FirstOrDefaultAsync(u => u.Id == dbToken.UserId);
 
     if (user is null)
-      return Res.Json(401, "USER_NOT_FOUND");
+      return Res.Json(401, "user not found");
 
     string accessToken =
         JwtLib.Create(user);
 
-    return Res.Json(200, "TOKEN_REFRESHED", new
+    return Res.Json(200, "token refreshed", new
     {
       accessToken
     });
+  }
+
+  public static async Task<IResult> Login(SqlDbCtx db, HttpContext ctx)
+  {
+    LoginDto dto = (LoginDto)ctx.Items["dto"]!;
+
+    User? existingUser = await db.User.FirstOrDefaultAsync(u => u.Email == dto.Email);
+    if (existingUser is null)
+      return Res.Json(404, "user not found");
+
+    bool passwordOk =
+           BCrypt.Net.BCrypt.Verify(dto.Password, existingUser.Password);
+
+    if (!passwordOk)
+      return Res.Json(401, "invalid credentials");
+
+    var (
+    refreshToken,
+    dbRefreshToken,
+    accessToken
+) = genPairTokens(existingUser);
+
+    ApplyRefreshCookie(ctx, refreshToken);
+
+    db.RefreshToken.Add(dbRefreshToken);
+    await db.SaveChangesAsync();
+
+    return Res.Json(200, "logged successfully", new
+    {
+      accessToken
+    });
+  }
+
+  private static (string refreshToken, RefreshToken dbRefreshToken, string accessToken) genPairTokens(User us)
+  {
+    string refreshToken = RefreshTokensLib.Create();
+
+    RefreshToken dbRefreshToken = new()
+    {
+      UserId = us.Id,
+      TokenHash = RefreshTokensLib.Hash(refreshToken),
+      // ! to set higher in prod 
+      ExpiresAt = DateTime.UtcNow.AddMinutes(60)
+    };
+
+    string accessToken = JwtLib.Create(us);
+
+
+    return (
+      refreshToken,
+      dbRefreshToken,
+      accessToken
+    );
+  }
+
+
+  private static void ApplyRefreshCookie(HttpContext ctx, string refreshToken)
+  {
+    ctx.Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
+    {
+      HttpOnly = true,
+      Secure = true,
+      SameSite = SameSiteMode.Lax,
+      // ! to set higher in prod 
+      Expires = DateTimeOffset.UtcNow.AddMinutes(60)
+    });
+
   }
 }
