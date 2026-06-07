@@ -11,7 +11,7 @@ using Server.ConfigNS.SqlNS;
 namespace Server.Migrations
 {
     [DbContext(typeof(SqlDbCtx))]
-    [Migration("20260605155449_init_schemas")]
+    [Migration("20260607080351_init_schemas")]
     partial class init_schemas
     {
         /// <inheritdoc />

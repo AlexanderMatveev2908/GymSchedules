@@ -69,6 +69,10 @@ public static class SettingsConf
   1024 * 1024 * 500;
 });
 
+    builder.Services.AddNpgsqlDataSource(
+     EnvVarsLib.Get("DB_URL")
+ );
+
     builder.Services.AddDbContext<SqlDbCtx>(options =>
   {
     options.UseNpgsql(EnvVarsLib.Get("DB_URL"));

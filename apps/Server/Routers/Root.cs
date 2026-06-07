@@ -1,7 +1,5 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Routing;
+using Server.FeaturesNS.AuthNS;
 using Server.FeaturesNS.CloudNS;
-using Server.FeaturesNS.UsersNS;
 using Server.FeaturesNS.WakeUpNS;
 
 namespace Server.RoutersNS.RootNS;
@@ -14,7 +12,7 @@ public static class RootRouter
     api.DisableAntiforgery();
 
     CloudRouter.MapApi(api);
-    UsersRouter.MapApi(api);
     WakeUpRouter.MapAPi(api);
+    AuthRouter.MapApi(api);
   }
 }
