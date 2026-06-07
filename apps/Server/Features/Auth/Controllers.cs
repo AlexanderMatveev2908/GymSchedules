@@ -78,15 +78,16 @@ public static class AuthCtrl
     (ClaimsPrincipal)ctx.Items["user"]!;
 
 
-    foreach (Claim claim in user.Claims)
-    {
-      Console.WriteLine($"{claim.Type}: {claim.Value}");
-    }
+    // foreach (Claim claim in user.Claims)
+    // {
+    //   Console.WriteLine($"{claim.Type}: {claim.Value}");
+    // }
 
     return Res.Json(200, "protected data", new
     {
       id = user.FindFirst("id")?.Value,
-      email = user.FindFirst("email")?.Value
+      email = user.FindFirst("email")?.Value,
+      exp = user.FindFirst("exp")?.Value
     });
   }
 }
