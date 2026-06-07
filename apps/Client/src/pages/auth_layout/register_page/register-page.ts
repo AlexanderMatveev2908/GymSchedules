@@ -18,17 +18,10 @@ import { LibLog } from '@/core/lib/log';
 export class RegisterPage extends UseFormAppDir implements OnInit {
   public readonly form: FormGroup = RegisterFormMng.form();
   public readonly RegisterUiFct = RegisterUiFct;
+  public readonly schema = RegisterFormMng.schema;
 
   ngOnInit(): void {
-    this.initDataSignal();
-
-    this.useEffect(() => {
-      LibRootForm.setupIssues({
-        data: this.data(),
-        form: this.form,
-        schema: RegisterFormMng.schema,
-      });
-    });
+    this.setupForm();
   }
 
   public handleSubmit(): void {
