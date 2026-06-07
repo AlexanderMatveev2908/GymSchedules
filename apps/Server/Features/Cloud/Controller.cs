@@ -1,5 +1,5 @@
-using InvoicesApp.LibNS;
-using InvoicesApp.ServicesNS.CLoudNS;
+using Server.LibNS;
+using Server.ServicesNS.CLoudNS;
 using Microsoft.AspNetCore.Http;
 
 namespace Server.FeaturesNS.CloudNS;

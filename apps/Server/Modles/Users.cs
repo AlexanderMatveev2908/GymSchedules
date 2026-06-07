@@ -1,6 +1,6 @@
-using InvoicesApp.TypesNS.UsersNS;
+using Server.TypesNS.UsersNS;
 
-namespace InvoicesApp.ModelsNS.UsersNS;
+namespace Server.ModelsNS.UsersNS;
 
 
 public class Users

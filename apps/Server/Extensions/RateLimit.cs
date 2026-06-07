@@ -1,8 +1,8 @@
-using InvoicesApp.FilterNS.RateLimitNS;
+using Server.FilterNS.RateLimitNS;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
-namespace InvoicesApp.ExtensionsNS.RateLimitNS;
+namespace Server.ExtensionsNS.RateLimitNS;
 
 
 public static class RateLimitExt

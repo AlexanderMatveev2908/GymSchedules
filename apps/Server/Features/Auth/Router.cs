@@ -1,4 +1,4 @@
-using InvoicesApp.TypesNS.UsersNS;
+using Server.TypesNS.UsersNS;
 using Server.ExtensionsNS.RootNS;
 
 namespace Server.FeaturesNS.AuthNS;

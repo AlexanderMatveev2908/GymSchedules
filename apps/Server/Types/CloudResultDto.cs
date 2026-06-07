@@ -1,4 +1,4 @@
-namespace InvoicesApp.TypesNS.CloudNS;
+namespace Server.TypesNS.CloudNS;
 
 
 public sealed class CloudResultDto

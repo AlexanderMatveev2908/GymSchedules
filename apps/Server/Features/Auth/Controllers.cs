@@ -1,7 +1,7 @@
-using InvoicesApp.LibNS;
-using InvoicesApp.LibNS.ShapeNS;
-using InvoicesApp.ModelsNS.UsersNS;
-using InvoicesApp.TypesNS.UsersNS;
+using Server.LibNS;
+using Server.LibNS.ShapeNS;
+using Server.ModelsNS.UsersNS;
+using Server.TypesNS.UsersNS;
 using Microsoft.EntityFrameworkCore;
 using Server.ConfigNS.SqlNS;
 using Server.LibNS.JwtNS;

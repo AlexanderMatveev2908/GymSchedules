@@ -1,5 +1,6 @@
-using InvoicesApp.ModelsNS.UsersNS;
+using Server.ModelsNS.UsersNS;
 using Microsoft.EntityFrameworkCore;
+using Server.ModelsNS.RefreshTokensNS;
 
 namespace Server.ConfigNS.SqlNS;
 
@@ -10,6 +11,7 @@ public class SqlDbCtx : DbContext
   }
 
   public DbSet<Users> Users => Set<Users>();
+  public DbSet<RefreshTokens> RefreshTokens => Set<RefreshTokens>();
 
   protected override void OnModelCreating(
     ModelBuilder modelBuilder

@@ -1,4 +1,4 @@
-using InvoicesApp.LibNS.ErrNS;
+using Server.LibNS.ErrNS;
 
 namespace Server.LibNS.EnvNS;
 

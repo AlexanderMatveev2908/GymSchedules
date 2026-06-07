@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace InvoicesApp.TypesNS.UsersNS;
+namespace Server.TypesNS.UsersNS;
 
 public sealed class UsersDto
 {

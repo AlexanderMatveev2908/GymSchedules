@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using InvoicesApp.LibNS;
+using Server.LibNS;
 using Microsoft.AspNetCore.Http;
 using System.Collections;
 namespace Server.ValidatorsNS.RootNS;

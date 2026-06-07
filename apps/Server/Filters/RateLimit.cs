@@ -1,9 +1,9 @@
 
-using InvoicesApp.LibNS;
-using InvoicesApp.ServicesNS.RedisNS;
+using Server.LibNS;
+using Server.ServicesNS.RedisNS;
 using Microsoft.AspNetCore.Http;
 
-namespace InvoicesApp.FilterNS.RateLimitNS;
+namespace Server.FilterNS.RateLimitNS;
 
 
 public sealed class RateLimitFilter : IEndpointFilter

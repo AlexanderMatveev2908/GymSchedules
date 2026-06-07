@@ -1,4 +1,4 @@
-namespace InvoicesApp.LibNS.ErrNS;
+namespace Server.LibNS.ErrNS;
 
 public class ErrApp : Exception
 {
