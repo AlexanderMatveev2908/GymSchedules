@@ -1,13 +1,13 @@
-using Server.ModelsNS.UsersNS;
+using Server.ModelsNS.UserNS;
 
 namespace Server.ModelsNS.RefreshTokensNS;
 
-public class RefreshTokens
+public class RefreshToken
 {
   public int Id { get; set; }
 
   public int UserId { get; set; }
-  public Users User { get; set; } = null!;
+  public User User { get; set; } = null!;
 
   public string TokenHash { get; set; } = null!;
 

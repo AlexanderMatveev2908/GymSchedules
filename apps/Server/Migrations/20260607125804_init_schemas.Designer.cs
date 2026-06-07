@@ -12,7 +12,7 @@ using Server.ConfigNS.SqlNS;
 namespace Server.Migrations
 {
     [DbContext(typeof(SqlDbCtx))]
-    [Migration("20260607124805_init_schemas")]
+    [Migration("20260607125804_init_schemas")]
     partial class init_schemas
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace Server.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Server.ModelsNS.RefreshTokensNS.RefreshTokens", b =>
+            modelBuilder.Entity("Server.ModelsNS.RefreshTokensNS.RefreshToken", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -50,10 +50,10 @@ namespace Server.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("RefreshTokens");
+                    b.ToTable("RefreshToken");
                 });
 
-            modelBuilder.Entity("Server.ModelsNS.UsersNS.Users", b =>
+            modelBuilder.Entity("Server.ModelsNS.UserNS.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -82,12 +82,12 @@ namespace Server.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
-            modelBuilder.Entity("Server.ModelsNS.RefreshTokensNS.RefreshTokens", b =>
+            modelBuilder.Entity("Server.ModelsNS.RefreshTokensNS.RefreshToken", b =>
                 {
-                    b.HasOne("Server.ModelsNS.UsersNS.Users", "User")
+                    b.HasOne("Server.ModelsNS.UserNS.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

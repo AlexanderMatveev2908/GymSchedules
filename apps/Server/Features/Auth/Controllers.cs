@@ -1,7 +1,7 @@
 using Server.LibNS;
 using Server.LibNS.ShapeNS;
-using Server.ModelsNS.UsersNS;
-using Server.TypesNS.UsersNS;
+using Server.ModelsNS.UserNS;
+using Server.TypesNS.UserNS;
 using Microsoft.EntityFrameworkCore;
 using Server.ConfigNS.SqlNS;
 using Server.LibNS.JwtNS;
@@ -14,9 +14,9 @@ public static class AuthCtrl
 {
   public static async Task<IResult> Register(HttpContext ctx, SqlDbCtx db)
   {
-    UsersDto dto = (UsersDto)ctx.Items["dto"]!;
+    UserDto dto = (UserDto)ctx.Items["dto"]!;
 
-    Users? existing = await db.Users.FirstOrDefaultAsync(
+    User? existing = await db.User.FirstOrDefaultAsync(
       us => us.Email == dto.Email
     );
 
@@ -27,21 +27,21 @@ public static class AuthCtrl
 
     try
     {
-      Users newUser = new(dto);
+      User newUser = new(dto);
       newUser.Password = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
-      db.Users.Add(newUser);
+      db.User.Add(newUser);
       await db.SaveChangesAsync();
 
       string refreshToken = RefreshTokensLib.Create();
-      RefreshTokens dbRefreshToken = new()
+      RefreshToken dbRefreshToken = new()
       {
         UserId = newUser.Id,
         TokenHash = RefreshTokensLib.Hash(refreshToken),
-        ExpiresAt = DateTime.UtcNow.AddDays(7)
+        ExpiresAt = DateTime.UtcNow.AddMinutes(5)
       };
 
-      db.RefreshTokens.Add(dbRefreshToken);
+      db.RefreshToken.Add(dbRefreshToken);
       await db.SaveChangesAsync();
 
       string accessToken = JwtLib.Create(newUser);
@@ -51,7 +51,7 @@ public static class AuthCtrl
         HttpOnly = true,
         Secure = true,
         SameSite = SameSiteMode.Lax,
-        Expires = DateTimeOffset.UtcNow.AddDays(7)
+        Expires = DateTimeOffset.UtcNow.AddMinutes(5)
       });
 
       await trx.CommitAsync();

@@ -1,4 +1,4 @@
-using Server.ModelsNS.UsersNS;
+using Server.ModelsNS.UserNS;
 using Microsoft.EntityFrameworkCore;
 using Server.ModelsNS.RefreshTokensNS;
 
@@ -10,14 +10,14 @@ public class SqlDbCtx : DbContext
   {
   }
 
-  public DbSet<Users> Users => Set<Users>();
-  public DbSet<RefreshTokens> RefreshTokens => Set<RefreshTokens>();
+  public DbSet<User> User => Set<User>();
+  public DbSet<RefreshToken> RefreshToken => Set<RefreshToken>();
 
   protected override void OnModelCreating(
     ModelBuilder modelBuilder
 )
   {
-    modelBuilder.Entity<Users>()
+    modelBuilder.Entity<User>()
         .HasIndex(u => u.Email)
         .IsUnique();
   }

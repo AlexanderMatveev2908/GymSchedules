@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Server.TypesNS.UsersNS;
+namespace Server.TypesNS.UserNS;
 
-public sealed class UsersDto
+public sealed class UserDto
 {
   [Required]
   [MinLength(3)]

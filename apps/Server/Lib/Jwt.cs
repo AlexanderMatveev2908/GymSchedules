@@ -1,7 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Server.ModelsNS.UsersNS;
+using Server.ModelsNS.UserNS;
 using Microsoft.IdentityModel.Tokens;
 using Server.LibNS.EnvNS;
 
@@ -9,7 +9,7 @@ namespace Server.LibNS.JwtNS;
 
 public static class JwtLib
 {
-    public static string Create(Users user)
+    public static string Create(User user)
     {
         string secret = EnvVarsLib.Get("JWT_SECRET");
 
@@ -31,7 +31,7 @@ public static class JwtLib
 
         JwtSecurityToken token = new(
             claims: claims,
-            expires: DateTime.UtcNow.AddDays(7),
+            expires: DateTime.UtcNow.AddMinutes(1),
             signingCredentials: creds
         );
 
