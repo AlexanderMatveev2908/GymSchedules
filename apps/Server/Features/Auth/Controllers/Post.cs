@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 using Server.ConfigNS.SqlNS;
 using Server.LibNS;
@@ -163,5 +164,48 @@ public static class AuthPostCtrl
       Expires = DateTimeOffset.UtcNow.AddMinutes(60)
     });
 
+  }
+
+
+  public static async Task<IResult> Logout(HttpContext ctx, SqlDbCtx db)
+  {
+    ClaimsPrincipal user =
+   (ClaimsPrincipal)ctx.Items["user"]!;
+
+
+    string? userIdRaw =
+        user.FindFirst("id")?.Value;
+    if (!int.TryParse(userIdRaw, out int userId))
+      return Res.Json(401, "JWT_INVALID");
+
+    string? refreshToken =
+     ctx.Request.Cookies["refreshToken"];
+
+    if (!string.IsNullOrWhiteSpace(refreshToken))
+    {
+      string tokenHash =
+          RefreshTokensLib.Hash(refreshToken);
+
+      RefreshToken? dbToken =
+          await db.RefreshToken.FirstOrDefaultAsync(t =>
+              t.UserId == userId &&
+              t.TokenHash == tokenHash
+          );
+
+      if (dbToken is not null)
+      {
+        db.RefreshToken.Remove(dbToken);
+        await db.SaveChangesAsync();
+      }
+    }
+
+    ctx.Response.Cookies.Delete("refreshToken", new CookieOptions
+    {
+      HttpOnly = true,
+      Secure = true,
+      SameSite = SameSiteMode.Lax
+    });
+
+    return Res.Json(200, "logout successful");
   }
 }

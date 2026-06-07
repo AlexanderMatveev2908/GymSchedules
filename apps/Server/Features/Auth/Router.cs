@@ -12,6 +12,7 @@ public static class AuthRouter
   {
     api.MapPost("/auth/register", AuthPostCtrl.Register).WithBodyChecked<RegisterDto>();
     api.MapPost("/auth/login", AuthPostCtrl.Login).WithBodyChecked<LoginDto>();
+    api.MapPost("/auth/logout", AuthPostCtrl.Logout).WithJwtCheck();
     api.MapGet("/auth/protected", (Delegate)AuthGetCtrl.GetProtected).WithJwtCheck();
     api.MapPost("/auth/refresh", AuthPostCtrl.RefreshToken);
 
