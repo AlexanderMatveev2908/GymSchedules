@@ -8,10 +8,11 @@ import { RegisterUiFct } from '@/features/auth/register/paperwork/register_ui_fc
 import { LibRootForm } from '@/core/lib/forms/root_form';
 import { LibLog } from '@/core/lib/log';
 import { PwdInput } from '@/common/components/forms/pwd_input/pwd-input';
+import { RadioInput } from '@/common/components/forms/radio_input/radio-input';
 
 @Component({
   selector: 'app-register-page',
-  imports: [TitlePage, TxtInput, ReactiveFormsModule, PwdInput],
+  imports: [TitlePage, TxtInput, ReactiveFormsModule, PwdInput, RadioInput],
   templateUrl: './register-page.html',
   styleUrl: './register-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

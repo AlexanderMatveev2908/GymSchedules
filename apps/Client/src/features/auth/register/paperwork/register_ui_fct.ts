@@ -24,4 +24,10 @@ export class RegisterUiFct {
     label: 'Password',
     type: 'password',
   };
+
+  public static readonly isTrainer: FormFieldT = {
+    name: 'isTrainer',
+    label: 'Register as Trainer',
+    type: 'radio',
+  };
 }
