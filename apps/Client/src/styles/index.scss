@@ -52,3 +52,8 @@ button:disabled:hover {
 a:hover {
   @apply cursor-pointer;
 }
+
+input:-moz-autofill,
+input:-moz-autofill:focus {
+  -moz-text-fill-color: var(--neutral__950) !important;
+}
