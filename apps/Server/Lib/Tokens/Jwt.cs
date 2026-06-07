@@ -5,7 +5,7 @@ using Server.ModelsNS.UserNS;
 using Microsoft.IdentityModel.Tokens;
 using Server.LibNS.EnvNS;
 
-namespace Server.LibNS.JwtNS;
+namespace Server.LibNS.TokensNS;
 
 public static class JwtLib
 {
@@ -29,9 +29,10 @@ public static class JwtLib
             ];
 
 
+        // ! to set higher in prod 
         JwtSecurityToken token = new(
             claims: claims,
-            expires: DateTime.UtcNow.AddMinutes(1),
+            expires: DateTime.UtcNow.AddMinutes(5),
             signingCredentials: creds
         );
 

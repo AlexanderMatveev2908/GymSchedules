@@ -1,8 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using Server.TypesNS.AuthNS;
 
 namespace Server.TypesNS.UserNS;
 
-public sealed class UserDto
+public sealed class UserDto : LoginDto
 {
   [Required]
   [MinLength(3)]
@@ -10,19 +11,5 @@ public sealed class UserDto
   [Required]
   [MinLength(3)]
   public string LastName { get; set; } = null!;
-
-  [Required]
-  [EmailAddress]
-  public string Email { get; set; } = null!;
-
-  [Required]
-  [MinLength(8)]
-  [RegularExpression(
-    @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).+$",
-    ErrorMessage =
-        "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character."
-)]
-  public string Password { get; set; } = null!;
-
 
 }

@@ -2,7 +2,7 @@ using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Server.LibNS.RefreshTokensSvcNS;
+namespace Server.LibNS.TokensNS;
 
 public static class RefreshTokensLib
 {
