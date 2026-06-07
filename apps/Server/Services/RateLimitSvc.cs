@@ -3,7 +3,7 @@ using StackExchange.Redis;
 using Server.ConfigNS.RedisNS;
 using Microsoft.AspNetCore.Http;
 
-namespace InvoicesApp.ServicesNS.RedisNS;
+namespace Server.ServicesNS.RedisNS;
 
 public static class RateLimitSvc
 {

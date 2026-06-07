@@ -1,4 +1,4 @@
-namespace InvoicesApp.LibNS.ShapeNS;
+namespace Server.LibNS.ShapeNS;
 
 public static class LibShape
 {

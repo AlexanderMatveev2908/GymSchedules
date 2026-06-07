@@ -1,10 +1,12 @@
-using InvoicesApp.LibNS;
-using InvoicesApp.LibNS.ShapeNS;
-using InvoicesApp.ModelsNS.UsersNS;
-using InvoicesApp.TypesNS.UsersNS;
+using Server.LibNS;
+using Server.LibNS.ShapeNS;
+using Server.ModelsNS.UserNS;
+using Server.TypesNS.UserNS;
 using Microsoft.EntityFrameworkCore;
 using Server.ConfigNS.SqlNS;
 using Server.LibNS.JwtNS;
+using Server.LibNS.RefreshTokensSvcNS;
+using Server.ModelsNS.RefreshTokensNS;
 
 namespace Server.FeaturesNS.AuthNS;
 
@@ -12,34 +14,57 @@ public static class AuthCtrl
 {
   public static async Task<IResult> Register(HttpContext ctx, SqlDbCtx db)
   {
-    UsersDto dto = (UsersDto)ctx.Items["dto"]!;
+    UserDto dto = (UserDto)ctx.Items["dto"]!;
 
-    Users? existing = await db.Users.FirstOrDefaultAsync(
+    User? existing = await db.User.FirstOrDefaultAsync(
       us => us.Email == dto.Email
     );
 
     if (existing is not null)
       return Res.Json(404, "User already exists");
 
-    Users newUser = new(dto);
-    newUser.Password = BCrypt.Net.BCrypt.HashPassword(
-    dto.Password
-);
+    await using var trx = await db.Database.BeginTransactionAsync();
 
-    db.Users.Add(newUser);
-    await db.SaveChangesAsync();
-
-    string token = JwtLib.Create(newUser);
-
-    return Res.Json(201, "User registered",
-  new
-  {
-    accessToken = token,
-    newUser = LibShape.Merge(newUser, new
+    try
     {
-      id = newUser.Id
-    })
-  }
-    );
+      User newUser = new(dto);
+      newUser.Password = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+
+      db.User.Add(newUser);
+      await db.SaveChangesAsync();
+
+      string refreshToken = RefreshTokensLib.Create();
+      RefreshToken dbRefreshToken = new()
+      {
+        UserId = newUser.Id,
+        TokenHash = RefreshTokensLib.Hash(refreshToken),
+        ExpiresAt = DateTime.UtcNow.AddMinutes(5)
+      };
+
+      db.RefreshToken.Add(dbRefreshToken);
+      await db.SaveChangesAsync();
+
+      string accessToken = JwtLib.Create(newUser);
+
+      ctx.Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
+      {
+        HttpOnly = true,
+        Secure = true,
+        SameSite = SameSiteMode.Lax,
+        Expires = DateTimeOffset.UtcNow.AddMinutes(5)
+      });
+
+      await trx.CommitAsync();
+
+      return Res.Json(201, "user registered", new
+      {
+        newUser = LibShape.Merge(newUser, new { id = newUser.Id })
+      });
+    }
+    catch
+    {
+      await trx.RollbackAsync();
+      return Res.Json(500, "Register failed");
+    }
   }
 }

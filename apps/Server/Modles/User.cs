@@ -1,9 +1,9 @@
-using InvoicesApp.TypesNS.UsersNS;
+using Server.TypesNS.UserNS;
 
-namespace InvoicesApp.ModelsNS.UsersNS;
+namespace Server.ModelsNS.UserNS;
 
 
-public class Users
+public class User
 {
   public int Id { get; set; }
   public string FirstName { get; set; } = null!;
@@ -11,11 +11,11 @@ public class Users
   public string Email { get; set; } = null!;
   public string Password { get; set; } = null!;
 
-  public Users()
+  public User()
   {
   }
 
-  public Users(UsersDto dto)
+  public User(UserDto dto)
   {
     FirstName = dto.FirstName;
     LastName = dto.LastName;

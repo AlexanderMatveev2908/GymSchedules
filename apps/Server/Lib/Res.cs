@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 
-namespace InvoicesApp.LibNS;
+namespace Server.LibNS;
 
 public static class Res
 {

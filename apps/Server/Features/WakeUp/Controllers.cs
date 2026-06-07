@@ -1,4 +1,4 @@
-using InvoicesApp.LibNS;
+using Server.LibNS;
 
 namespace Server.FeaturesNS.WakeUpNS;
 

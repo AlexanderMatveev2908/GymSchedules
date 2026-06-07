@@ -1,12 +1,12 @@
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
-using InvoicesApp.LibNS.ErrNS;
-using InvoicesApp.TypesNS.CloudNS;
+using Server.LibNS.ErrNS;
+using Server.TypesNS.CloudNS;
 using Microsoft.AspNetCore.Http;
 using Server.ConfigNS.CloudNS;
 using Server.LibNS.FilesNS;
 
-namespace InvoicesApp.ServicesNS.CLoudNS;
+namespace Server.ServicesNS.CLoudNS;
 
 
 
