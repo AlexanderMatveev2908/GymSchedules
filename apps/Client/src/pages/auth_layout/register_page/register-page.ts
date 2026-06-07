@@ -1,10 +1,42 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { TitlePage } from '@/common/components/general/title_page/title-page';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { RegisterFormMng } from '@/features/auth/register/paperwork/register_form_mng';
+import { UseFormAppDir } from '@/core/directives/use_form_app';
+import { TxtInput } from '@/common/components/forms/txt_input/txt-input';
+import { RegisterUiFct } from '@/features/auth/register/paperwork/register_ui_fct';
+import { LibRootForm } from '@/core/lib/forms/root_form';
+import { LibLog } from '@/core/lib/log';
 
 @Component({
   selector: 'app-register-page',
-  imports: [],
+  imports: [TitlePage, TxtInput, ReactiveFormsModule],
   templateUrl: './register-page.html',
   styleUrl: './register-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RegisterPage {}
+export class RegisterPage extends UseFormAppDir implements OnInit {
+  public readonly form: FormGroup = RegisterFormMng.form();
+  public readonly RegisterUiFct = RegisterUiFct;
+
+  ngOnInit(): void {
+    this.initDataSignal();
+
+    this.useEffect(() => {
+      LibRootForm.setupIssues({
+        data: this.data(),
+        form: this.form,
+        schema: RegisterFormMng.schema,
+      });
+    });
+  }
+
+  public handleSubmit(): void {
+    LibRootForm.handleSubmit({
+      form: this.form,
+      schema: RegisterFormMng.schema,
+      onValid: (data) => LibLog.main('success', data),
+      onInvalid: (errs) => LibLog.main('issues', errs),
+    });
+  }
+}

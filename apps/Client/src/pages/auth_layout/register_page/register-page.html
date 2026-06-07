@@ -1,3 +1,15 @@
 <div class="root">
-  <p>RegisterPage generated 🎉</p>
+  <app-title-page [title]="'Register'" />
+
+  <form [formGroup]="form" (ngSubmit)="handleSubmit()" class="root__form">
+    <app-txt-input
+      [ctrl]="getCtrl(RegisterUiFct.firstName.name)"
+      [field]="RegisterUiFct.firstName"
+    />
+    <app-txt-input [ctrl]="getCtrl(RegisterUiFct.lastName.name)" [field]="RegisterUiFct.lastName" />
+    <app-txt-input [ctrl]="getCtrl(RegisterUiFct.email.name)" [field]="RegisterUiFct.email" />
+    <app-txt-input [ctrl]="getCtrl(RegisterUiFct.password.name)" [field]="RegisterUiFct.password" />
+
+    <button type="submit">click me</button>
+  </form>
 </div>

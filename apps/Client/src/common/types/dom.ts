@@ -12,3 +12,9 @@ export interface LinkSidebar {
   label: string;
   id: string;
 }
+
+export interface FormFieldT {
+  name: string;
+  label: string;
+  type: string;
+}
