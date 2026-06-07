@@ -20,7 +20,8 @@ public static class EnvVarsLib
     "DB_DATABASE",
     "DB_USER",
     "DB_PWD",
-    "DB_URL"
+    "DB_URL",
+    "JWT_SECRET"
   };
 
   public static string Get(string key)

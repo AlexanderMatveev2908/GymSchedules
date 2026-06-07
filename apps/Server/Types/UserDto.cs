@@ -23,4 +23,6 @@ public sealed class UsersDto
         "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character."
 )]
   public string Password { get; set; } = null!;
+
+
 }
