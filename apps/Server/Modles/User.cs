@@ -22,5 +22,6 @@ public class User
     LastName = dto.LastName;
     Email = dto.Email;
     Password = dto.Password;
+    IsTrainer = dto.IsTrainer!.Value;
   }
 }
