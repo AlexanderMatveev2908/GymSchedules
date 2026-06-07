@@ -38,7 +38,8 @@ public static class AuthPostCtrl
       {
         UserId = newUser.Id,
         TokenHash = RefreshTokensLib.Hash(refreshToken),
-        ExpiresAt = DateTime.UtcNow.AddMinutes(5)
+        // ! to set higher in prod 
+        ExpiresAt = DateTime.UtcNow.AddMinutes(60)
       };
 
       db.RefreshToken.Add(dbRefreshToken);
@@ -51,7 +52,8 @@ public static class AuthPostCtrl
         HttpOnly = true,
         Secure = true,
         SameSite = SameSiteMode.Lax,
-        Expires = DateTimeOffset.UtcNow.AddMinutes(5)
+        // ! to set higher in prod 
+        Expires = DateTimeOffset.UtcNow.AddMinutes(60)
       });
 
       await trx.CommitAsync();
