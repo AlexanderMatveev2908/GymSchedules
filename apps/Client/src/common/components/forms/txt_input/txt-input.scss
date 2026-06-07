@@ -1,7 +1,7 @@
 @use 'exports/mix.scss' as mix;
 
 :host {
-  @apply block min-w-0;
+  @apply block min-w-0 w-full;
 }
 
 .root {
@@ -12,7 +12,7 @@
   }
 
   .root__field {
-    @apply w-full flex flex-col gap-3;
+    @apply w-full flex flex-col gap-[10px];
 
     .field__input {
       outline: none;
