@@ -10,12 +10,13 @@ public class User
   public string LastName { get; set; } = null!;
   public string Email { get; set; } = null!;
   public string Password { get; set; } = null!;
+  public bool IsTrainer { get; set; }
 
   public User()
   {
   }
 
-  public User(UserDto dto)
+  public User(RegisterDto dto)
   {
     FirstName = dto.FirstName;
     LastName = dto.LastName;

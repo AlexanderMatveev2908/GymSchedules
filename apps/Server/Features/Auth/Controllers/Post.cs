@@ -14,7 +14,7 @@ public static class AuthPostCtrl
 {
   public static async Task<IResult> Register(HttpContext ctx, SqlDbCtx db)
   {
-    UserDto dto = (UserDto)ctx.Items["dto"]!;
+    RegisterDto dto = (RegisterDto)ctx.Items["dto"]!;
 
     User? existing = await db.User.FirstOrDefaultAsync(
       us => us.Email == dto.Email

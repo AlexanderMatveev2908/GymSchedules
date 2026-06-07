@@ -3,7 +3,7 @@ using Server.TypesNS.AuthNS;
 
 namespace Server.TypesNS.UserNS;
 
-public sealed class UserDto : LoginDto
+public sealed class RegisterDto : LoginDto
 {
   [Required]
   [MinLength(3)]
@@ -12,4 +12,6 @@ public sealed class UserDto : LoginDto
   [MinLength(3)]
   public string LastName { get; set; } = null!;
 
+  [Required]
+  public bool? IsTrainer { get; set; }
 }

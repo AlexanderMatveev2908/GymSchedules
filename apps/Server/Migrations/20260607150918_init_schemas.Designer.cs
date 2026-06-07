@@ -12,7 +12,7 @@ using Server.ConfigNS.SqlNS;
 namespace Server.Migrations
 {
     [DbContext(typeof(SqlDbCtx))]
-    [Migration("20260607125804_init_schemas")]
+    [Migration("20260607150918_init_schemas")]
     partial class init_schemas
     {
         /// <inheritdoc />
@@ -68,6 +68,9 @@ namespace Server.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<bool>("IsTrainer")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("LastName")
                         .IsRequired()

@@ -53,6 +53,10 @@ public class JwtFilter : IEndpointFilter
 
       return await next(ctx);
     }
+    catch (SecurityTokenExpiredException)
+    {
+      return Res.Json(401, "JWT_EXPIRED");
+    }
     catch
     {
       return Res.Json(401, "JWT_INVALID");

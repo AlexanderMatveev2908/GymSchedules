@@ -21,7 +21,8 @@ namespace Server.Migrations
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
-                    Password = table.Column<string>(type: "text", nullable: false)
+                    Password = table.Column<string>(type: "text", nullable: false),
+                    IsTrainer = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
