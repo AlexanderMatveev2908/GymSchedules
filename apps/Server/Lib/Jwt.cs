@@ -31,7 +31,7 @@ public static class JwtLib
 
         JwtSecurityToken token = new(
             claims: claims,
-            expires: DateTime.UtcNow.AddMinutes(1),
+            expires: DateTime.UtcNow.AddMinutes(5),
             signingCredentials: creds
         );
 

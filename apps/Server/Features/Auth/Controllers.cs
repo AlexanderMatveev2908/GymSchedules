@@ -7,6 +7,8 @@ using Server.ConfigNS.SqlNS;
 using Server.LibNS.JwtNS;
 using Server.LibNS.RefreshTokensSvcNS;
 using Server.ModelsNS.RefreshTokensNS;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Security.Claims;
 
 namespace Server.FeaturesNS.AuthNS;
 
@@ -58,7 +60,8 @@ public static class AuthCtrl
 
       return Res.Json(201, "user registered", new
       {
-        newUser = LibShape.Merge(newUser, new { id = newUser.Id })
+        newUser = LibShape.Merge(newUser, new { id = newUser.Id }),
+        accessToken
       });
     }
     catch
@@ -66,5 +69,24 @@ public static class AuthCtrl
       await trx.RollbackAsync();
       return Res.Json(500, "Register failed");
     }
+  }
+
+  public static async Task<IResult> GetProtected(HttpContext ctx)
+  {
+
+    ClaimsPrincipal user =
+    (ClaimsPrincipal)ctx.Items["user"]!;
+
+
+    foreach (Claim claim in user.Claims)
+    {
+      Console.WriteLine($"{claim.Type}: {claim.Value}");
+    }
+
+    return Res.Json(200, "protected data", new
+    {
+      id = user.FindFirst("id")?.Value,
+      email = user.FindFirst("email")?.Value
+    });
   }
 }
