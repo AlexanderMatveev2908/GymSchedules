@@ -1,9 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Server.ConfigNS.SqlNS;
 using Server.LibNS;
-using Server.LibNS.JwtNS;
-using Server.LibNS.RefreshTokensSvcNS;
 using Server.LibNS.ShapeNS;
+using Server.LibNS.TokensNS;
 using Server.ModelsNS.RefreshTokensNS;
 using Server.ModelsNS.UserNS;
 using Server.TypesNS.UserNS;
