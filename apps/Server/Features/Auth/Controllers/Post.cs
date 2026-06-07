@@ -1,18 +1,16 @@
-using Server.LibNS;
-using Server.LibNS.ShapeNS;
-using Server.ModelsNS.UserNS;
-using Server.TypesNS.UserNS;
 using Microsoft.EntityFrameworkCore;
 using Server.ConfigNS.SqlNS;
+using Server.LibNS;
 using Server.LibNS.JwtNS;
 using Server.LibNS.RefreshTokensSvcNS;
+using Server.LibNS.ShapeNS;
 using Server.ModelsNS.RefreshTokensNS;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.Security.Claims;
+using Server.ModelsNS.UserNS;
+using Server.TypesNS.UserNS;
 
 namespace Server.FeaturesNS.AuthNS;
 
-public static class AuthCtrl
+public static class AuthPostCtrl
 {
   public static async Task<IResult> Register(HttpContext ctx, SqlDbCtx db)
   {
@@ -71,23 +69,42 @@ public static class AuthCtrl
     }
   }
 
-  public static async Task<IResult> GetProtected(HttpContext ctx)
+
+  public static async Task<IResult> RefreshToken(HttpContext ctx, SqlDbCtx db)
   {
+    string? refreshToken =
+    ctx.Request.Cookies["refreshToken"];
 
-    ClaimsPrincipal user =
-    (ClaimsPrincipal)ctx.Items["user"]!;
+    if (string.IsNullOrWhiteSpace(refreshToken))
+      return Res.Json(401, "REFRESH_TOKEN_MISSING");
+
+    string tokenHash =
+    RefreshTokensLib.Hash(refreshToken);
+
+    RefreshToken? dbToken =
+         await db.RefreshToken
+             .FirstOrDefaultAsync(t => t.TokenHash == tokenHash);
+
+    if (dbToken is null)
+      return Res.Json(401, "REFRESH_TOKEN_INVALID");
 
 
-    // foreach (Claim claim in user.Claims)
-    // {
-    //   Console.WriteLine($"{claim.Type}: {claim.Value}");
-    // }
+    if (dbToken.ExpiresAt < DateTime.UtcNow)
+      return Res.Json(401, "REFRESH_TOKEN_EXPIRED");
 
-    return Res.Json(200, "protected data", new
+
+    User? user =
+         await db.User.FirstOrDefaultAsync(u => u.Id == dbToken.UserId);
+
+    if (user is null)
+      return Res.Json(401, "USER_NOT_FOUND");
+
+    string accessToken =
+        JwtLib.Create(user);
+
+    return Res.Json(200, "TOKEN_REFRESHED", new
     {
-      id = user.FindFirst("id")?.Value,
-      email = user.FindFirst("email")?.Value,
-      exp = user.FindFirst("exp")?.Value
+      accessToken
     });
   }
 }
