@@ -8,6 +8,7 @@ export class RegisterFormMng {
     lastName: z.string().min(3),
     email: z.email(),
     password: z.string().min(8).regex(Reg.PWD),
+    isTrainer: z.boolean(),
   });
 
   public static form(): FormGroup {
@@ -16,6 +17,7 @@ export class RegisterFormMng {
       lastName: new FormControl('', { nonNullable: true }),
       email: new FormControl('', { nonNullable: true }),
       password: new FormControl('', { nonNullable: true }),
+      isTrainer: new FormControl(false, { nonNullable: true }),
     });
   }
 }
