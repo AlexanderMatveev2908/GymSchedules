@@ -42,10 +42,15 @@ public static class RateLimitSvc
     int remaining =
            Math.Max(0, limit - requests);
 
+    TimeSpan? ttl = await db.KeyTimeToLiveAsync(key);
+
     ctx.Response.Headers["RateLimit-Limit"] =
               limit.ToString();
     ctx.Response.Headers["RateLimit-Remaining"] =
         remaining.ToString();
+    ctx.Response.Headers["RateLimit-Reset"] =
+        ((int)(ttl?.TotalSeconds ?? window.TotalSeconds)).ToString();
+
 
     if (requests > limit)
       return await db.KeyTimeToLiveAsync(key);

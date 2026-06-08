@@ -172,14 +172,11 @@ public static class AuthPostCtrl
 
   public static async Task<IResult> Logout(HttpContext ctx, SqlDbCtx db)
   {
-    ClaimsPrincipal user =
-   (ClaimsPrincipal)ctx.Items["user"]!;
+    User user =
+   (User)ctx.Items["user"]!;
 
 
-    string? userIdRaw =
-        user.FindFirst("id")?.Value;
-    if (!int.TryParse(userIdRaw, out int userId))
-      return Res.Json(401, "JWT_INVALID");
+    int userId = user.Id;
 
     string? refreshToken =
      ctx.Request.Cookies["refreshToken"];

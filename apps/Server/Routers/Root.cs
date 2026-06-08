@@ -1,5 +1,6 @@
 using Server.FeaturesNS.AuthNS;
 using Server.FeaturesNS.CloudNS;
+using Server.FeaturesNS.UserNS;
 using Server.FeaturesNS.WakeUpNS;
 
 namespace Server.RoutersNS.RootNS;
@@ -14,5 +15,6 @@ public static class RootRouter
     CloudRouter.MapApi(api);
     WakeUpRouter.MapAPi(api);
     AuthRouter.MapApi(api);
+    UserRouter.MapAPi(api);
   }
 }
