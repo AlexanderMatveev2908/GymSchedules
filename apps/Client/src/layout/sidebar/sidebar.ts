@@ -8,6 +8,7 @@ import { AuthSlice } from '@/features/auth/slice';
 import { UseAuthApiSvc } from '@/features/auth/api';
 import { UseApiTrackerHk } from '@/core/hooks/use_api_tracker';
 import { finalize, tap } from 'rxjs';
+import { UserSlice } from '@/features/user/slice';
 
 @Component({
   selector: 'app-sidebar',
@@ -20,6 +21,7 @@ import { finalize, tap } from 'rxjs';
 export class Sidebar {
   public readonly authSlice: AuthSlice = inject(AuthSlice);
   public readonly apiTracker: UseApiTrackerHk = inject(UseApiTrackerHk);
+  public readonly userSlice: UserSlice = inject(UserSlice);
 
   private readonly authApi: UseAuthApiSvc = inject(UseAuthApiSvc);
 

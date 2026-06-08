@@ -25,7 +25,7 @@ public static class AuthGetCtrl
     });
   }
 
-  public static async Task<IResult> TestLimiter()
+  public static IResult TestLimiter()
   {
     return Res.Json(200, "limited");
   }

@@ -21,5 +21,8 @@ const initState: UserStateT = {
 export const userReducer = createReducer(
   initState,
   on(UserActT.RESET__USER_STATE, () => initState),
-  on(UserActT.SET_USER, (_: UserStateT, action: { user: UserT }) => ({ ..._, user: action.user })),
+  on(UserActT.SET_USER, (_: UserStateT, action: { user: Nullable<UserT> }) => ({
+    ..._,
+    user: action.user,
+  })),
 );

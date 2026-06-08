@@ -6,7 +6,7 @@ namespace Server.FeaturesNS.UserNS;
 
 public static class UserGetCtrl
 {
-  public static async Task<IResult> GetUser(HttpContext ctx, SqlDbCtx db)
+  public static IResult GetUser(HttpContext ctx)
   {
 
     var dict = LibShape.ToDict(ctx.Items["user"]);

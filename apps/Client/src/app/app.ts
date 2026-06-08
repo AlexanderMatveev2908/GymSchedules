@@ -5,6 +5,7 @@ import { WakeUp } from '@/layout/wake_up/wake-up';
 import { Navbar } from '@/layout/navbar/navbar';
 import { Sidebar } from '@/layout/sidebar/sidebar';
 import { UseLogOnMountSvc } from './etc/log_on_mount';
+import { UseFetchUserOnLogSvc } from './etc/fetch_user_on_log';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +15,10 @@ import { UseLogOnMountSvc } from './etc/log_on_mount';
 })
 export class App implements OnInit {
   private readonly logOnMount: UseLogOnMountSvc = inject(UseLogOnMountSvc);
+  private readonly useFetchUser: UseFetchUserOnLogSvc = inject(UseFetchUserOnLogSvc);
 
   ngOnInit(): void {
     this.logOnMount.main();
+    this.useFetchUser.getUser();
   }
 }

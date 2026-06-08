@@ -8,9 +8,11 @@
       : 'translate-x-[100%] opacity-0'
   "
 >
-  <div class="root__email">
-    <span> john@gmail.com </span>
-  </div>
+  @if (userSlice.user()?.email) {
+    <div class="root__email">
+      <span>{{ userSlice.user()?.email }}</span>
+    </div>
+  }
 
   <div class="root__links">
     @if (authSlice.isLogged()) {
