@@ -8,6 +8,7 @@ import { UseStorageSvc } from '@/core/services/use_storage';
 import { tap } from 'rxjs';
 import { RegisterFormT } from './register/paperwork/register_form_mng';
 import { UseNavSvc } from '@/core/services/use_nav';
+import { UseKitApiSvc } from '@/core/services/use_kit_api';
 
 type RegisterDataT = {
   accessToken: string;
@@ -17,11 +18,8 @@ type RegisterDataT = {
 @Injectable({
   providedIn: 'root',
 })
-export class UseAuthApiSvc {
+export class UseAuthApiSvc extends UseKitApiSvc {
   public readonly authSlice: AuthSlice = inject(AuthSlice);
-  public readonly api: UseApiSvc = inject(UseApiSvc);
-  public readonly useStorage: UseStorageSvc = inject(UseStorageSvc);
-  public readonly useNav: UseNavSvc = inject(UseNavSvc);
 
   public register(body: RegisterFormT): ObsResT<RegisterDataT> {
     return this.api
@@ -36,5 +34,15 @@ export class UseAuthApiSvc {
           this.useNav.replace('/', { from: null });
         }),
       );
+  }
+
+  public logout(): ObsResT<void> {
+    return this.api.post(LibApiArgs.withURL('/auth/logout').toastOnFulfilled()).pipe(
+      tap((res: ResApiT<void>) => {
+        this.useStorage.removeItem('accessToken');
+        this.authSlice.setLogged(false);
+        this.useNav.replace('/', { from: null });
+      }),
+    );
   }
 }

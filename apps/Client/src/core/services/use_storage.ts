@@ -53,4 +53,10 @@ export class UseStorageSvc {
       }
     });
   }
+
+  public removeItem(key: StorageKeyT): Nullable<void> {
+    return this.checkEnv(() => {
+      sessionStorage.removeItem(key);
+    });
+  }
 }
