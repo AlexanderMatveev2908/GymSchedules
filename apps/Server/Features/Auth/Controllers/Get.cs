@@ -6,7 +6,7 @@ namespace Server.FeaturesNS.AuthNS;
 
 public static class AuthGetCtrl
 {
-  public static async Task<IResult> GetProtected(HttpContext ctx)
+  public static IResult GetProtected(HttpContext ctx)
   {
 
     User user =
