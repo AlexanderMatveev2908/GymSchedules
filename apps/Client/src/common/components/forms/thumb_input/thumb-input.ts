@@ -1,5 +1,6 @@
+import { RefDomT } from '@/common/types/dom';
 import { UseFormFieldImg } from '@/core/directives/use_form_field_img';
-import { ChangeDetectionStrategy, Component, OnInit, Signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, Signal, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -10,6 +11,13 @@ import { ReactiveFormsModule } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ThumbInput extends UseFormFieldImg implements OnInit {
+  @ViewChild('fileInput')
+  private fileInput: RefDomT;
+
+  public openFilePicker(): void {
+    this.fileInput?.nativeElement?.click();
+  }
+
   ngOnInit(): void {
     this.setupField();
   }
