@@ -32,7 +32,7 @@ public static class JwtLib
         // ! to set higher in prod 
         JwtSecurityToken token = new(
             claims: claims,
-            expires: DateTime.UtcNow.AddSeconds(30),
+            expires: DateTime.UtcNow.AddMinutes(30),
             signingCredentials: creds
         );
 

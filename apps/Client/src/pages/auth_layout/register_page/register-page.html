@@ -14,6 +14,8 @@
       [ctrl]="getCtrl(RegisterUiFct.isTrainer.name)"
       [field]="RegisterUiFct.isTrainer"
     />
-    <button class="form__btn" type="submit">Submit</button>
+    <button class="form__btn" type="submit">
+      {{ apiTracker.isPending() ? 'Pending...' : 'Submit' }}
+    </button>
   </form>
 </div>

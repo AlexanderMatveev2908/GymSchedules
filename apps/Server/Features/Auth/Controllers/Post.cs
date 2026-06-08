@@ -47,9 +47,12 @@ public static class AuthPostCtrl
 
       await trx.CommitAsync();
 
+      Dictionary<string, object?> userDict = LibShape.Merge(newUser, new { id = newUser.Id });
+      var userWithoutPwd = LibShape.RemoveKeys(userDict, "password");
+
       return Res.Json(201, "user registered", new
       {
-        newUser = LibShape.Merge(newUser, new { id = newUser.Id }),
+        newUser = userWithoutPwd,
         accessToken
       });
     }

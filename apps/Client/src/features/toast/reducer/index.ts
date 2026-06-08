@@ -9,7 +9,7 @@ export interface ToastStateT extends AppPayloadEventT {
   isToast: boolean;
 }
 
-export const initState: ToastStateT = {
+const initState: ToastStateT = {
   msg: '',
   status: 0,
   eventT: 'NONE',

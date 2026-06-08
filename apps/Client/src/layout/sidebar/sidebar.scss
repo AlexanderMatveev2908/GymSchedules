@@ -15,7 +15,7 @@
     @apply px-6 pt-5 flex flex-col gap-5;
 
     .links__item {
-      @apply text-gray-400 text-2xl;
+      @apply text-gray-400 text-2xl w-fit;
     }
   }
 }

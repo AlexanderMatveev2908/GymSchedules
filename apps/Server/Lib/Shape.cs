@@ -10,7 +10,7 @@ public static class LibShape
     return char.ToLowerInvariant(txt[0]) + txt[1..];
   }
 
-  public static object Merge<T>(T dto, object extra)
+  public static Dictionary<string, object?> Merge<T>(T dto, object extra)
   {
     Dictionary<string, object?> dict = [];
 
@@ -22,6 +22,19 @@ public static class LibShape
     foreach (var p in extra.GetType().GetProperties())
     {
       dict[ToCamelCase(p.Name)] = p.GetValue(extra);
+    }
+
+    return dict;
+  }
+
+  public static Dictionary<string, object?> RemoveKeys(
+    Dictionary<string, object?> dict,
+    params string[] keys
+)
+  {
+    foreach (string key in keys)
+    {
+      dict.Remove(key);
     }
 
     return dict;
