@@ -65,4 +65,8 @@ export class UseAuthApiSvc extends UseKitApiSvc {
       }),
     );
   }
+
+  public getProtectedData(): ObsResT<void> {
+    return this.api.get(LibApiArgs.withURL('/auth/protected').toastOnFulfilled());
+  }
 }
