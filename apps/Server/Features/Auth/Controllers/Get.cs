@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using Server.LibNS;
+using Server.ModelsNS.UserNS;
 
 namespace Server.FeaturesNS.AuthNS;
 
@@ -8,8 +9,8 @@ public static class AuthGetCtrl
   public static async Task<IResult> GetProtected(HttpContext ctx)
   {
 
-    ClaimsPrincipal user =
-    (ClaimsPrincipal)ctx.Items["user"]!;
+    User user =
+    (User)ctx.Items["user"]!;
 
 
     // foreach (Claim claim in user.Claims)
@@ -19,9 +20,8 @@ public static class AuthGetCtrl
 
     return Res.Json(200, "protected data", new
     {
-      id = user.FindFirst("id")?.Value,
-      email = user.FindFirst("email")?.Value,
-      exp = user.FindFirst("exp")?.Value
+      id = user.Id,
+      email = user.Email,
     });
   }
 
