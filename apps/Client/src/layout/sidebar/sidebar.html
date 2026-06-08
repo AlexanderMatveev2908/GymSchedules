@@ -13,10 +13,18 @@
   </div>
 
   <div class="root__links">
-    @for (lk of linksNonLoggedUiFct.links; track lk.id) {
-      <a (click)="sidebarSlice.toggleSidebar()" [routerLink]="lk.url" class="links__item">
-        <span>{{ lk.label }}</span>
-      </a>
+    @if (authSlice.isLogged()) {
+      @for (lk of linksNonLoggedUiFct.linksLogged; track lk.id) {
+        <a (click)="sidebarSlice.toggleSidebar()" [routerLink]="lk.url" class="links__item">
+          <span>{{ lk.label }}</span>
+        </a>
+      }
+    } @else {
+      @for (lk of linksNonLoggedUiFct.linksNotLogged; track lk.id) {
+        <a (click)="sidebarSlice.toggleSidebar()" [routerLink]="lk.url" class="links__item">
+          <span>{{ lk.label }}</span>
+        </a>
+      }
     }
   </div>
 </div>
