@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { TitlePage } from '@/common/components/general/title_page/title-page';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { RegisterFormMng } from '@/features/auth/register/paperwork/register_form_mng';
+import { RegisterFormMng } from '@/features/auth/register/paperwork';
 import { UseFormAppDir } from '@/core/directives/use_form_app';
 import { TxtInput } from '@/common/components/forms/txt_input/txt-input';
-import { RegisterUiFct } from '@/features/auth/register/paperwork/register_ui_fct';
+import { RegisterUiFct } from '@/features/auth/register/ui_fct';
 import { LibRootForm } from '@/core/lib/forms/root_form';
 import { LibLog } from '@/core/lib/log';
 import { PwdInput } from '@/common/components/forms/pwd_input/pwd-input';
