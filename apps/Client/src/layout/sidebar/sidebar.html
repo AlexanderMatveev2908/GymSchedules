@@ -19,6 +19,10 @@
           <span>{{ lk.label }}</span>
         </a>
       }
+
+      <button (click)="handleSubmit()" class="links__item">
+        <span>{{ apiTracker.isPending() ? 'Pending...' : 'Logout' }}</span>
+      </button>
     } @else {
       @for (lk of linksNonLoggedUiFct.linksNotLogged; track lk.id) {
         <a (click)="sidebarSlice.toggleSidebar()" [routerLink]="lk.url" class="links__item">

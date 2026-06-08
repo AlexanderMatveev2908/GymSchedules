@@ -25,7 +25,7 @@ export class LinksNonLoggedUiFct {
     url: '',
   };
 
-  public static linksLogged: LinkSidebar[] = [this.logout];
+  public static linksLogged: LinkSidebar[] = [this.profile];
 
   public static linksNotLogged: LinkSidebar[] = [this.register, this.login];
 }
