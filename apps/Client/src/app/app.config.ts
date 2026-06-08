@@ -12,6 +12,7 @@ import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { rootReducer } from '@/core/store';
 import { useRootApiMdw } from '@/core/api/middleware/use_root_api';
 import { useConfApiMdw } from '@/core/api/middleware/use_conf_api';
+import { useRefreshApi } from '@/core/api/middleware/use_refresh_api';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,7 +22,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
 
     provideStore(rootReducer),
-    provideHttpClient(withFetch(), withInterceptors([useRootApiMdw, useConfApiMdw])),
+    provideHttpClient(withFetch(), withInterceptors([useRootApiMdw, useConfApiMdw, useRefreshApi])),
     provideStoreDevtools({ maxAge: 25 }),
   ],
 };
