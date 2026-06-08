@@ -13,5 +13,19 @@ export class LinksNonLoggedUiFct {
     url: '/auth/login',
   };
 
-  public static links: LinkSidebar[] = [this.register, this.login];
+  public static profile: LinkSidebar = {
+    id: v4(),
+    label: 'Profile',
+    url: '/user/profile',
+  };
+
+  public static logout: LinkSidebar = {
+    id: v4(),
+    label: 'Logout',
+    url: '',
+  };
+
+  public static linksLogged: LinkSidebar[] = [this.logout];
+
+  public static linksNotLogged: LinkSidebar[] = [this.register, this.login];
 }
