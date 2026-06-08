@@ -6,10 +6,13 @@ import { ProfileFormMng } from '@/features/user/profile/paperwork';
 import { ProfileUiFct } from '@/features/user/profile/ui_fct';
 import { UseFormAppDir } from '@/core/directives/use_form_app';
 import { UseApiTrackerHk } from '@/core/hooks/use_api_tracker';
+import { TxtInput } from '@/common/components/forms/txt_input/txt-input';
+import { LibRootForm } from '@/core/lib/forms/root_form';
+import { LibLog } from '@/core/lib/log';
 
 @Component({
   selector: 'app-profile-page',
-  imports: [TitlePage, ThumbInput, ReactiveFormsModule],
+  imports: [TitlePage, ThumbInput, ReactiveFormsModule, TxtInput],
   providers: [UseApiTrackerHk],
   templateUrl: './profile-page.html',
   styleUrl: './profile-page.scss',
@@ -24,5 +27,14 @@ export class ProfilePage extends UseFormAppDir {
 
   ngOnInit(): void {
     this.setupForm();
+  }
+
+  public handleSubmit(): void {
+    LibRootForm.handleSubmit({
+      form: this.form,
+      schema: this.schema,
+      onValid: (data) => LibLog.main('success', data),
+      onInvalid: (errs) => LibLog.main('errors', errs),
+    });
   }
 }

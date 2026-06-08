@@ -1,8 +1,11 @@
 <div class="root">
   <app-title-page [title]="'Profile'" />
 
-  <form [formGroup]="form" class="root__form">
+  <form [formGroup]="form" (ngSubmit)="handleSubmit()" class="root__form">
     <app-thumb-input [ctrl]="getCtrl(ProfileUiFct.imgFile.name)" [field]="ProfileUiFct.imgFile" />
+
+    <app-txt-input [ctrl]="getCtrl(ProfileUiFct.firstName.name)" [field]="ProfileUiFct.firstName" />
+    <app-txt-input [ctrl]="getCtrl(ProfileUiFct.lastName.name)" [field]="ProfileUiFct.lastName" />
 
     <button class="app__form_btn" type="submit">
       {{ apiTracker.isPending() ? 'Pending...' : 'Submit' }}
