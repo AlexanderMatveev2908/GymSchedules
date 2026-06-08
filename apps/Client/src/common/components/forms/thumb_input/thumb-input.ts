@@ -14,13 +14,13 @@ import {
 import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-img-input',
+  selector: 'app-thumb-input',
   imports: [ReactiveFormsModule],
-  templateUrl: './img-input.html',
-  styleUrl: './img-input.scss',
+  templateUrl: './thumb-input.html',
+  styleUrl: './thumb-input.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ImgInput extends UseFormFieldDir implements OnInit {
+export class ThumbInput extends UseFormFieldDir implements OnInit {
   public readonly field: InputSignal<FormFieldT> = input.required();
 
   private isFile(val: unknown): val is File {

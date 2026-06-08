@@ -2,7 +2,7 @@
   <app-title-page [title]="'Profile'" />
 
   <form [formGroup]="form" class="root__form">
-    <app-img-input [ctrl]="getCtrl(ProfileUiFct.imgFile.name)" [field]="ProfileUiFct.imgFile" />
+    <app-thumb-input [ctrl]="getCtrl(ProfileUiFct.imgFile.name)" [field]="ProfileUiFct.imgFile" />
 
     <button class="app__form_btn" type="submit">
       {{ apiTracker.isPending() ? 'Pending...' : 'Submit' }}
