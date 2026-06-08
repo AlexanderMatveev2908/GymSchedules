@@ -10,6 +10,6 @@ public static class RootExtension
     this RouteHandlerBuilder route
   )
   {
-    return route.AddEndpointFilter<RootFilter<T>>();
+    return route.AddEndpointFilter<RootBodyFilter<T>>();
   }
 }

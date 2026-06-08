@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using System.Collections;
 namespace Server.ValidatorsNS.RootNS;
 
-public static class RootCheck
+public static class RootBodyCheck
 {
   public static async Task<IResult?> Check<T>(HttpContext ctx)
   {

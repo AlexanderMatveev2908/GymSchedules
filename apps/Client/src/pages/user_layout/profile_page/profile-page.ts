@@ -9,6 +9,8 @@ import { UseApiTrackerHk } from '@/core/hooks/use_api_tracker';
 import { TxtInput } from '@/common/components/forms/txt_input/txt-input';
 import { LibRootForm } from '@/core/lib/forms/root_form';
 import { LibLog } from '@/core/lib/log';
+import { UseUserApiSvc } from '@/features/user/api';
+import { FormParser } from '@/core/lib/forms/form_parser';
 
 @Component({
   selector: 'app-profile-page',
@@ -23,6 +25,7 @@ export class ProfilePage extends UseFormAppDir {
   public readonly ProfileUiFct = ProfileUiFct;
   public readonly schema = ProfileFormMng.schema;
 
+  private userApi: UseUserApiSvc = inject(UseUserApiSvc);
   public readonly apiTracker: UseApiTrackerHk = inject(UseApiTrackerHk);
 
   ngOnInit(): void {
@@ -33,7 +36,11 @@ export class ProfilePage extends UseFormAppDir {
     LibRootForm.handleSubmit({
       form: this.form,
       schema: this.schema,
-      onValid: (data) => LibLog.main('success', data),
+      onValid: (data) => {
+        const formData: FormData = FormParser.genFormData(data);
+
+        this.apiTracker.track(this.userApi.putProfile(formData)).subscribe();
+      },
       onInvalid: (errs) => LibLog.main('errors', errs),
     });
   }
