@@ -24,4 +24,9 @@ public static class AuthGetCtrl
       exp = user.FindFirst("exp")?.Value
     });
   }
+
+  public static async Task<IResult> TestLimiter()
+  {
+    return Res.Json(200, "limited");
+  }
 }

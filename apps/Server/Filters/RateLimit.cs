@@ -18,11 +18,15 @@ public sealed class RateLimitFilter : IEndpointFilter
     _limit = limit;
   }
 
+
   public async ValueTask<object?> InvokeAsync(
     EndpointFilterInvocationContext ctx,
     EndpointFilterDelegate next
 )
   {
+
+    Console.WriteLine("run limiter");
+
     HttpContext http = ctx.HttpContext;
 
     TimeSpan? ttl = await RateLimitSvc.Limit(
