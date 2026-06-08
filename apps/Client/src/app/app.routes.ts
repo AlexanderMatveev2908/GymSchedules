@@ -5,6 +5,8 @@ import { HomePage } from '@/pages/home_page/home-page';
 import { NotFoundPage } from '@/pages/not_found_page/not-found-page';
 import { NoticePage } from '@/pages/notice_page/notice-page';
 import { ProtectedPage } from '@/pages/protected_page/protected-page';
+import { ProfilePage } from '@/pages/user_layout/profile_page/profile-page';
+import { UserLayout } from '@/pages/user_layout/user-layout';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -27,6 +29,16 @@ export const routes: Routes = [
       {
         path: 'login',
         component: LoginPage,
+      },
+    ],
+  },
+  {
+    path: 'user',
+    component: UserLayout,
+    children: [
+      {
+        path: 'profile',
+        component: ProfilePage,
       },
     ],
   },

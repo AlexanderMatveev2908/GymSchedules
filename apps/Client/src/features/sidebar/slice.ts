@@ -15,4 +15,8 @@ export class SidebarSlice extends UseKitSliceSvc {
   public toggleSidebar(): void {
     this.store.dispatch(SidebarActT.SET_SIDEBAR({ val: !this.sidebarState().isOpen }));
   }
+
+  public closeSidebar(): void {
+    this.store.dispatch(SidebarActT.SET_SIDEBAR({ val: false }));
+  }
 }

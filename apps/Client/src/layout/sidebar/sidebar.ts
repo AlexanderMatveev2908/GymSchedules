@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  HostListener,
+  inject,
+  ViewChild,
+} from '@angular/core';
 import { BgBlack } from '../bg_black/bg-black';
 import { SidebarSlice } from '@/features/sidebar/slice';
 import { LinksNonLoggedUiFct } from './etc/ui_fct';
@@ -9,6 +16,7 @@ import { UseAuthApiSvc } from '@/features/auth/api';
 import { UseApiTrackerHk } from '@/core/hooks/use_api_tracker';
 import { finalize, tap } from 'rxjs';
 import { UserSlice } from '@/features/user/slice';
+import { RefDomT } from '@/common/types/dom';
 
 @Component({
   selector: 'app-sidebar',
