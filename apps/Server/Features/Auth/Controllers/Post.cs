@@ -164,7 +164,7 @@ public static class AuthPostCtrl
       Secure = true,
       SameSite = SameSiteMode.Lax,
       // ! to set higher in prod 
-      Expires = DateTimeOffset.UtcNow.AddMinutes(60)
+      Expires = DateTimeOffset.UtcNow.AddMinutes(70)
     });
 
   }
