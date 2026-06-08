@@ -57,3 +57,7 @@ input:-moz-autofill,
 input:-moz-autofill:focus {
   -moz-text-fill-color: var(--neutral__950) !important;
 }
+
+.app__form_btn {
+  @apply mt-[50px] border-[3px] border-gray-200 text-2xl px-10 py-2 rounded-xl;
+}

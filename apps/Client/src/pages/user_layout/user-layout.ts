@@ -1,10 +1,11 @@
 import { UseNavSvc } from '@/core/services/use_nav';
 import { AuthSlice } from '@/features/auth/slice';
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-user-layout',
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './user-layout.html',
   styleUrl: './user-layout.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

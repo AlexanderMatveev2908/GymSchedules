@@ -1,0 +1,14 @@
+.root {
+  @apply flex flex-col justify-center items-center;
+
+  .root__img {
+    @apply w-[100px] h-[100px] border-2;
+
+    > img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .root__input {
+  }
+}
