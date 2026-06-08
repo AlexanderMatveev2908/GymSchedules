@@ -162,7 +162,7 @@ public static class AuthPostCtrl
     {
       HttpOnly = true,
       Secure = true,
-      SameSite = SameSiteMode.Lax,
+      SameSite = SameSiteMode.None,
       // ! to set higher in prod 
       Expires = DateTimeOffset.UtcNow.AddMinutes(70)
     });
@@ -206,7 +206,7 @@ public static class AuthPostCtrl
     {
       HttpOnly = true,
       Secure = true,
-      SameSite = SameSiteMode.Lax
+      SameSite = SameSiteMode.None
     });
 
     return Res.Json(200, "logout successful");
