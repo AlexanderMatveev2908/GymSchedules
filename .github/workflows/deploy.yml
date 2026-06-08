@@ -55,3 +55,4 @@ jobs:
           DB_URL: ${{ secrets.DB_URL }}
           FRONTEND_URL: ${{ secrets.FRONTEND_URL }}
           FRONTEND_URL_DEV: ${{ secrets.FRONTEND_URL_DEV }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
