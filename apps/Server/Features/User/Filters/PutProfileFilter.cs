@@ -14,26 +14,14 @@ public class PutProfileFilter : IEndpointFilter
   {
     HttpContext httpCtx = ctx.HttpContext;
 
-    if (!httpCtx.Request.HasFormContentType)
-      return Res.Json(415, "Content-Type must be multipart/form-data");
-
-    IFormCollection form =
-      await httpCtx.Request.ReadFormAsync();
-
-    string? firstName = form["firstName"];
-    string? lastName = form["lastName"];
-    IFormFile? file = form.Files["imgFile"];
-
-    PutProfileDto dto = new()
-    {
-      FirstName = firstName ?? "",
-      LastName = lastName ?? ""
-    };
-
-    var result = RootFormCheck.Check(dto);
+    var result = await RootFormCheck.Check<PutProfileDto>(httpCtx);
 
     if (result is not null)
       return result;
+
+    IFormCollection form =
+    (IFormCollection)httpCtx.Items["form"]!;
+    IFormFile? file = form.Files["imgFile"];
 
     if (
       file is not null &&
@@ -44,7 +32,6 @@ public class PutProfileFilter : IEndpointFilter
     }
 
     httpCtx.Items["file"] = file;
-    httpCtx.Items["dto"] = dto;
 
     return await next(ctx);
   }
