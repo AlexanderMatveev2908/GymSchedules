@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-06-10 04:59:30",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "*/*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "PostmanRuntime/7.46.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwiZXhwIjoxNzgxMDY4MDU3fQ.S_VrqvO-8ftximIFKRbr5slcDmEmSlssoBW8BG8daFc",
+    "Cookie": "refreshToken=OLXzTJYxcJ%2FS5Dns7rq3tkzovAVQRYmrBVLARxN78Omm7RgCbpDaYjdXtmkqkb5EgtbO1YZzkPNA4TDy0Vt13Q%3D%3D",
+    "Postman-Token": "097155f4-e713-496d-a133-cd50389f0e98"
+  },
+  "routeParams": {},
+  "body": null
+}
