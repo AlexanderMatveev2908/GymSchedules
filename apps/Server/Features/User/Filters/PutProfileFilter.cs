@@ -19,6 +19,8 @@ public class PutProfileFilter : IEndpointFilter
     if (result is not null)
       return result;
 
+
+
     IFormCollection form =
     (IFormCollection)httpCtx.Items["form"]!;
     IFormFile? file = form.Files["imgFile"];

@@ -12,9 +12,9 @@ public class PutProfileDto
   [MinLength(3)]
   public string LastName { get; set; } = null!;
 
-  [RegularExpression(
-       @"^https?:\/\/res\.cloudinary\.com\/",
-       ErrorMessage = "Image must be hosted on Cloudinary"
-   )]
+  // [RegularExpression(
+  //      @"^https?:\/\/res\.cloudinary\.com\/",
+  //      ErrorMessage = "Image must be hosted on Cloudinary"
+  //  )]
   public string? imgFile { get; set; }
 }

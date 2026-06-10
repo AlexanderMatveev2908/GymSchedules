@@ -11,10 +11,14 @@ import { LibRootForm } from '@/core/lib/forms/root_form';
 import { LibLog } from '@/core/lib/log';
 import { UseUserApiSvc } from '@/features/user/api';
 import { FormParser } from '@/core/lib/forms/form_parser';
+import { UserSlice } from '@/features/user/slice';
+import { PageWrapper } from '@/common/components/hoc/page_wrapper/page-wrapper';
+import { UserT } from '@/features/user/reducer';
+import { Nullable } from '@/common/types/general';
 
 @Component({
   selector: 'app-profile-page',
-  imports: [TitlePage, ThumbInput, ReactiveFormsModule, TxtInput],
+  imports: [TitlePage, ThumbInput, ReactiveFormsModule, TxtInput, PageWrapper],
   providers: [UseApiTrackerHk],
   templateUrl: './profile-page.html',
   styleUrl: './profile-page.scss',
@@ -25,11 +29,26 @@ export class ProfilePage extends UseFormAppDir {
   public readonly ProfileUiFct = ProfileUiFct;
   public readonly schema = ProfileFormMng.schema;
 
+  private readonly userSlice: UserSlice = inject(UserSlice);
+
   private userApi: UseUserApiSvc = inject(UseUserApiSvc);
   public readonly apiTracker: UseApiTrackerHk = inject(UseApiTrackerHk);
 
   ngOnInit(): void {
     this.setupForm();
+
+    this.useEffect(() => {
+      const user: Nullable<UserT> = this.userSlice.user();
+      if (!user) return;
+
+      this.form.markAllAsTouched();
+      this.form.markAllAsDirty();
+      this.form.patchValue({
+        firstName: user?.firstName ?? '',
+        lastName: user?.lastName ?? '',
+        imgFile: user?.thumbnail?.url ?? '',
+      });
+    });
   }
 
   public handleSubmit(): void {
