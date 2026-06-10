@@ -12,7 +12,7 @@ using Server.ConfigNS.SqlNS;
 namespace Server.Migrations
 {
     [DbContext(typeof(SqlDbCtx))]
-    [Migration("20260610025501_init_schemas")]
+    [Migration("20260610031430_init_schemas")]
     partial class init_schemas
     {
         /// <inheritdoc />
@@ -61,20 +61,20 @@ namespace Server.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("publicId")
+                    b.Property<string>("PublicId")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("url")
+                    b.Property<string>("Url")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("userId")
+                    b.Property<int>("UserId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("userId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Thumbnail");
                 });
@@ -129,7 +129,7 @@ namespace Server.Migrations
                 {
                     b.HasOne("Server.ModelsNS.UserNS.User", "User")
                         .WithMany()
-                        .HasForeignKey("userId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

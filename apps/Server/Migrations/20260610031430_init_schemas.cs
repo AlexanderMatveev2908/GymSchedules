@@ -57,16 +57,16 @@ namespace Server.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    publicId = table.Column<string>(type: "text", nullable: false),
-                    url = table.Column<string>(type: "text", nullable: false),
-                    userId = table.Column<int>(type: "integer", nullable: false)
+                    PublicId = table.Column<string>(type: "text", nullable: false),
+                    Url = table.Column<string>(type: "text", nullable: false),
+                    UserId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Thumbnail", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Thumbnail_User_userId",
-                        column: x => x.userId,
+                        name: "FK_Thumbnail_User_UserId",
+                        column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -78,9 +78,9 @@ namespace Server.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Thumbnail_userId",
+                name: "IX_Thumbnail_UserId",
                 table: "Thumbnail",
-                column: "userId");
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_User_Email",
