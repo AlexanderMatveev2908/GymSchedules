@@ -50,6 +50,32 @@ namespace Server.Migrations
                     b.ToTable("RefreshToken");
                 });
 
+            modelBuilder.Entity("Server.ModelsNS.ThumbNS.Thumbnail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("publicId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("url")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("userId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("userId");
+
+                    b.ToTable("Thumbnail");
+                });
+
             modelBuilder.Entity("Server.ModelsNS.UserNS.User", b =>
                 {
                     b.Property<int>("Id")
@@ -90,6 +116,17 @@ namespace Server.Migrations
                     b.HasOne("Server.ModelsNS.UserNS.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Server.ModelsNS.ThumbNS.Thumbnail", b =>
+                {
+                    b.HasOne("Server.ModelsNS.UserNS.User", "User")
+                        .WithMany()
+                        .HasForeignKey("userId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

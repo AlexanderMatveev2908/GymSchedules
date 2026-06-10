@@ -12,7 +12,7 @@ namespace Server.ServicesNS.CLoudNS;
 
 public static class CloudSvc
 {
-  private static async Task<CloudResultDto> UploadImg(IFormFile file)
+  private static async Task<CloudResultDto> UploadImg(IFormFile file, string folder)
   {
     using Stream stream =
  file.OpenReadStream();
@@ -24,7 +24,7 @@ public static class CloudSvc
                       FilesLib.MakeFilename(file),
                       stream
                   ),
-                Folder = "cs__server"
+                Folder = $"cs__{folder}"
               };
 
     var Connection = CloudConf.Connection;
@@ -40,7 +40,7 @@ uploadParams
     };
   }
 
-  private async static Task<CloudResultDto> UploadVideo(IFormFile file)
+  private async static Task<CloudResultDto> UploadVideo(IFormFile file, string folder)
   {
 
     var tempDir = FilesLib.ChainCurrDir("temp");
@@ -58,7 +58,7 @@ uploadParams
     VideoUploadParams uploadParamsVideo = new()
     {
       File = new FileDescription(tempPath),
-      Folder = "cs__server"
+      Folder = $"cs__{folder}"
     };
 
     var Connection = CloudConf.Connection;
@@ -73,12 +73,12 @@ uploadParams
     };
   }
 
-  public static async Task<CloudResultDto> UploadSingle(IFormFile file)
+  public static async Task<CloudResultDto> UploadSingle(IFormFile file, string folder)
   {
     if (file.ContentType.StartsWith("video/"))
-      return await UploadVideo(file);
+      return await UploadVideo(file, folder);
     else if (file.ContentType.StartsWith("image/"))
-      return await UploadImg(file);
+      return await UploadImg(file, folder);
     else
       throw new ErrApp("Unsupported file type");
   }
@@ -87,7 +87,8 @@ uploadParams
   public static async Task<
     List<CloudResultDto>
 > UploadMultiple(
-    List<IFormFile> files
+    List<IFormFile> files,
+    string folder
 )
   {
     List<CloudResultDto> results =
@@ -95,7 +96,7 @@ uploadParams
 
     foreach (IFormFile file in files)
     {
-      results.Add(await UploadSingle(file));
+      results.Add(await UploadSingle(file, folder));
     }
 
     return results;

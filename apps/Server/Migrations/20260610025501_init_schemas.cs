@@ -51,10 +51,36 @@ namespace Server.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Thumbnail",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    publicId = table.Column<string>(type: "text", nullable: false),
+                    url = table.Column<string>(type: "text", nullable: false),
+                    userId = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Thumbnail", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Thumbnail_User_userId",
+                        column: x => x.userId,
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_RefreshToken_UserId",
                 table: "RefreshToken",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Thumbnail_userId",
+                table: "Thumbnail",
+                column: "userId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_User_Email",
@@ -68,6 +94,9 @@ namespace Server.Migrations
         {
             migrationBuilder.DropTable(
                 name: "RefreshToken");
+
+            migrationBuilder.DropTable(
+                name: "Thumbnail");
 
             migrationBuilder.DropTable(
                 name: "User");

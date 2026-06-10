@@ -11,4 +11,6 @@ public class PutProfileDto
   [Required]
   [MinLength(3)]
   public string LastName { get; set; } = null!;
+
+  public string? imgFile { get; set; }
 }
