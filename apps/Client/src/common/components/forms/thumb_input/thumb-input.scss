@@ -1,0 +1,29 @@
+.root {
+  @apply flex flex-col gap-[25px] justify-center items-center;
+
+  .root__img {
+    @apply w-[200px] h-[200px] border-[3px] rounded-full overflow-hidden;
+
+    > img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .root__input {
+    @apply hidden;
+  }
+
+  .root__input_replace {
+    @apply flex flex-col justify-center items-center gap-[15px];
+
+    > button {
+      @apply px-10 py-2 border-2 border-gray-300 rounded-xl text-lg;
+    }
+
+    .input_replace__err {
+      span {
+        @apply text-lg text-red-600;
+      }
+    }
+  }
+}

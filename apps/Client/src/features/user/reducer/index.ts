@@ -1,6 +1,7 @@
 import { Nullable } from '@/common/types/general';
 import { createReducer, on } from '@ngrx/store';
 import { UserActT } from './actions';
+import { ThumbnailT } from '@/common/types/user';
 
 export interface UserT {
   firstName: string;
@@ -8,6 +9,7 @@ export interface UserT {
   email: string;
   password?: string;
   isTrainer: boolean;
+  thumbnail: Nullable<ThumbnailT>;
 }
 
 export interface UserStateT {

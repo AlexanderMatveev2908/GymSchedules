@@ -3,7 +3,7 @@ using Server.ValidatorsNS.RootNS;
 
 namespace Server.FiltersNS.RootNS;
 
-public class RootFilter<T> : IEndpointFilter
+public class RootBodyFilter<T> : IEndpointFilter
 {
   public async ValueTask<object?> InvokeAsync(
     EndpointFilterInvocationContext ctx,
@@ -11,7 +11,7 @@ public class RootFilter<T> : IEndpointFilter
   )
   {
     IResult? errorResult =
-      await RootCheck.Check<T>(ctx.HttpContext);
+      await RootBodyCheck.Check<T>(ctx.HttpContext);
 
     if (errorResult is not null)
       return errorResult;

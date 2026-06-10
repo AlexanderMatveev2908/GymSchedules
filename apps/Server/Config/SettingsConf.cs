@@ -7,6 +7,7 @@ using Server.ConfigNS.SqlNS;
 using Server.LibNS.EnvNS;
 using Microsoft.Extensions.Hosting;
 using Server.RoutersNS.RootNS;
+using Server.MiddlewareNS.RootNS;
 
 namespace Server.ConfigNS.SettingsNS;
 
@@ -89,6 +90,7 @@ public static class SettingsConf
     app.UseCors("Frontend");
     // app.UseHttpsRedirection();
 
+    RootMdw.MainMdw(app);
     RootRouter.MapApi(app);
 
     app.Lifetime.ApplicationStarted.Register(() =>

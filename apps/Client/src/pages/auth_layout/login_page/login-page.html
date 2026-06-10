@@ -5,7 +5,7 @@
     <app-txt-input [ctrl]="getCtrl(LoginUiFct.email.name)" [field]="LoginUiFct.email" />
     <app-pwd-input [ctrl]="getCtrl(LoginUiFct.password.name)" [field]="LoginUiFct.password" />
 
-    <button class="form__btn" type="submit">
+    <button class="app__form_btn" type="submit">
       {{ apiTracker.isPending() ? 'Pending...' : 'Submit' }}
     </button>
   </form>

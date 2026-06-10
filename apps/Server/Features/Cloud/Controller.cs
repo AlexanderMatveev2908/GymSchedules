@@ -8,7 +8,7 @@ public static class CloudCtrl
 {
   public static async Task<IResult> PostFile(IFormFile file)
   {
-    var result = await CloudSvc.UploadSingle(file);
+    var result = await CloudSvc.UploadSingle(file, "server");
 
     return Res.Json(200, "File uploaded", new
     {

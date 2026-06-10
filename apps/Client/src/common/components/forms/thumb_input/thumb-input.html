@@ -1,0 +1,15 @@
+<div class="root">
+  <div class="root__img">
+    <img [src]="srcImg()" alt="" />
+  </div>
+
+  <input #fileInput (change)="handleFileChange($event)" type="file" class="root__input" />
+
+  <div class="root__input_replace">
+    <button (click)="openFilePicker()" type="button">Upload</button>
+
+    <div class="input_replace__err">
+      <span>{{ errMsg() }}</span>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,5 @@
+using Server.ModelsNS.RefreshTokensNS;
+using Server.ModelsNS.ThumbNS;
 using Server.TypesNS.UserNS;
 
 namespace Server.ModelsNS.UserNS;

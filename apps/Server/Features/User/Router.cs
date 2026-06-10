@@ -7,5 +7,6 @@ public static class UserRouter
   public static void MapAPi(RouteGroupBuilder api)
   {
     api.MapGet("/user", UserGetCtrl.GetUser).WithJwtCheck();
+    api.MapPut("/user/profile", UserPutCtrl.PutProfile).WithJwtCheck().AddEndpointFilter<PutProfileFilter>();
   }
 }

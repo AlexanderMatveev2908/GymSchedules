@@ -1,3 +1,27 @@
-<div class="root">
-  <p>ProfilePage generated 🎉</p>
-</div>
+<app-page-wrapper [waitClient]="true">
+  <ng-template #contentRef>
+    <div class="root">
+      <app-title-page [title]="'Profile'" />
+
+      <form [formGroup]="form" (ngSubmit)="handleSubmit()" class="root__form">
+        <app-thumb-input
+          [ctrl]="getCtrl(ProfileUiFct.imgFile.name)"
+          [field]="ProfileUiFct.imgFile"
+        />
+
+        <app-txt-input
+          [ctrl]="getCtrl(ProfileUiFct.firstName.name)"
+          [field]="ProfileUiFct.firstName"
+        />
+        <app-txt-input
+          [ctrl]="getCtrl(ProfileUiFct.lastName.name)"
+          [field]="ProfileUiFct.lastName"
+        />
+
+        <button class="app__form_btn" type="submit">
+          {{ apiTracker.isPending() ? 'Pending...' : 'Submit' }}
+        </button>
+      </form>
+    </div>
+  </ng-template>
+</app-page-wrapper>

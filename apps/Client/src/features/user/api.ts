@@ -19,4 +19,8 @@ export class UseUserApiSvc extends UseKitApiSvc {
       LibApiArgs.withURL<void>('/user').noToast().pushOnStatus([404]),
     );
   }
+
+  public putProfile(data: FormData): ObsResT<void> {
+    return this.api.put(LibApiArgs.withURL('/user/profile').body(data).toastOnFulfilled());
+  }
 }
