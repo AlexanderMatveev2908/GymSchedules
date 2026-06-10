@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using Server.LibNS;
+using Server.LibNS.ParserNS;
 
 namespace Server.ValidatorsNS.FormNS;
 
@@ -15,7 +16,7 @@ public static class RootFormCheck
     IFormCollection form =
       await ctx.Request.ReadFormAsync();
 
-    T dto = FormToDto<T>(form);
+    T dto = ParserLib.FormToDto<T>(form);
 
     List<ValidationResult> errors = [];
 
@@ -46,44 +47,7 @@ public static class RootFormCheck
     return null;
   }
 
-  private static T FormToDto<T>(IFormCollection form)
-    where T : new()
-  {
-    T dto = new();
 
-    foreach (PropertyInfo prop in typeof(T).GetProperties())
-    {
-      if (!prop.CanWrite)
-        continue;
 
-      string key = ToCamelCase(prop.Name);
 
-      if (!form.TryGetValue(key, out var value))
-        continue;
-
-      string rawValue = value.ToString();
-
-      if (string.IsNullOrWhiteSpace(rawValue))
-        continue;
-
-      Type targetType =
-        Nullable.GetUnderlyingType(prop.PropertyType)
-        ?? prop.PropertyType;
-
-      object? converted =
-        Convert.ChangeType(rawValue, targetType);
-
-      prop.SetValue(dto, converted);
-    }
-
-    return dto;
-  }
-
-  private static string ToCamelCase(string value)
-  {
-    if (string.IsNullOrWhiteSpace(value))
-      return value;
-
-    return char.ToLowerInvariant(value[0]) + value[1..];
-  }
 }
