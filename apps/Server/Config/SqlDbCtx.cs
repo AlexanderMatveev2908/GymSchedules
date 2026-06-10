@@ -22,5 +22,6 @@ public class SqlDbCtx : DbContext
     modelBuilder.Entity<User>()
         .HasIndex(u => u.Email)
         .IsUnique();
+
   }
 }

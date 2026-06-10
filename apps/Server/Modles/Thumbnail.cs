@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Server.ModelsNS.UserNS;
 using Server.TypesNS.CloudNS;
 
@@ -12,6 +13,8 @@ public class Thumbnail
   public string Url { get; set; } = null!;
 
   public int UserId { get; set; }
+
+  [JsonIgnore]
   public User User { get; set; } = null!;
 
 
