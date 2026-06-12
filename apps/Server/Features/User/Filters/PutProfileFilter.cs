@@ -25,10 +25,22 @@ public class PutProfileFilter : IEndpointFilter
     IFormFile? file = form.Files["imgFile"];
     PutProfileDto dto = (PutProfileDto)httpCtx.Items["dto"]!;
 
+    var resultImage = CheckImage(file, dto);
+
+    if (resultImage is not null)
+      return resultImage;
+
+    httpCtx.Items["file"] = file;
+
+    return await next(ctx);
+  }
+
+  private static IResult? CheckImage(IFormFile? file, PutProfileDto dto)
+  {
     if (
-      file is not null &&
-      !file.ContentType.StartsWith("image/")
-    )
+    file is not null &&
+    !file.ContentType.StartsWith("image/")
+  )
     {
       return Res.Json(400, "File must be an image");
     }
@@ -38,8 +50,6 @@ public class PutProfileFilter : IEndpointFilter
       return Res.Json(400, "Image must be uploaded to cloud");
     }
 
-    httpCtx.Items["file"] = file;
-
-    return await next(ctx);
+    return null;
   }
 }

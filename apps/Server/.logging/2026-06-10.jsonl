@@ -16,3 +16,84 @@
   "routeParams": {},
   "body": null
 }
+{
+  "timestamp": "2026-06-10 07:44:08",
+  "method": "POST",
+  "path": "/api/v1/auth/login",
+  "query": {},
+  "headers": {
+    "Accept": "*/*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "PostmanRuntime/7.46.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json",
+    "Content-Length": "71",
+    "Postman-Token": "a8eeb976-e9fe-41f8-8ce6-94b41456c1cf"
+  },
+  "routeParams": {},
+  "body": {
+    "email": "john@gmail.com",
+    "password": "dL4Np7Q7F(,%Xug$6v.2"
+  }
+}
+{
+  "timestamp": "2026-06-10 07:44:14",
+  "method": "PUT",
+  "path": "/api/v1/user/profile",
+  "query": {},
+  "headers": {
+    "Accept": "*/*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "PostmanRuntime/7.46.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwiZXhwIjoxNzgxMDc4MDUwfQ.u5C0CpOKHsiTqwDJ6EiECVYRNgTNT5oBHZ0Qzpbf-A8",
+    "Content-Type": "multipart/form-data; boundary=--------------------------367155336943366537408716",
+    "Cookie": "refreshToken=HrLR%2BP1KkEomL7bTx5pfD5CUmxe%2FkKuUQE8WXQY7DJudnpH1Iu4d5jGCHGSl35frjGVtAu%2B%2FAZV22S5WPXbbSg%3D%3D",
+    "Content-Length": "278",
+    "Postman-Token": "ab765aaf-9d7f-4338-9ab2-6110529a9ef4"
+  },
+  "routeParams": {},
+  "body": "multipart body skipped"
+}
+{
+  "timestamp": "2026-06-10 07:44:26",
+  "method": "PUT",
+  "path": "/api/v1/user/profile",
+  "query": {},
+  "headers": {
+    "Accept": "*/*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "PostmanRuntime/7.46.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwiZXhwIjoxNzgxMDc4MDUwfQ.u5C0CpOKHsiTqwDJ6EiECVYRNgTNT5oBHZ0Qzpbf-A8",
+    "Content-Type": "multipart/form-data; boundary=--------------------------440835715520067040147588",
+    "Cookie": "refreshToken=HrLR%2BP1KkEomL7bTx5pfD5CUmxe%2FkKuUQE8WXQY7DJudnpH1Iu4d5jGCHGSl35frjGVtAu%2B%2FAZV22S5WPXbbSg%3D%3D",
+    "Content-Length": "390",
+    "Postman-Token": "d987c722-8946-4783-b03f-bafd509d20cf"
+  },
+  "routeParams": {},
+  "body": "multipart body skipped"
+}
+{
+  "timestamp": "2026-06-10 07:44:46",
+  "method": "PUT",
+  "path": "/api/v1/user/profile",
+  "query": {},
+  "headers": {
+    "Accept": "*/*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "PostmanRuntime/7.46.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwiZXhwIjoxNzgxMDc4MDUwfQ.u5C0CpOKHsiTqwDJ6EiECVYRNgTNT5oBHZ0Qzpbf-A8",
+    "Content-Type": "multipart/form-data; boundary=--------------------------454130976537018610437397",
+    "Cookie": "refreshToken=HrLR%2BP1KkEomL7bTx5pfD5CUmxe%2FkKuUQE8WXQY7DJudnpH1Iu4d5jGCHGSl35frjGVtAu%2B%2FAZV22S5WPXbbSg%3D%3D",
+    "Content-Length": "67446",
+    "Postman-Token": "c28d632f-084a-4553-9463-42912de5b54e"
+  },
+  "routeParams": {},
+  "body": "multipart body skipped"
+}

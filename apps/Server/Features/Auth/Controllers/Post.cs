@@ -72,6 +72,10 @@ public static class AuthPostCtrl
     if (string.IsNullOrWhiteSpace(refreshToken))
       return Res.Json(401, "REFRESH_TOKEN_MISSING");
 
+    await db.RefreshToken
+    .Where(t => t.ExpiresAt < DateTime.UtcNow)
+    .ExecuteDeleteAsync();
+
     string tokenHash =
     RefreshTokensLib.Hash(refreshToken);
 

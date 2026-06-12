@@ -10,6 +10,7 @@ import { RegisterFormT } from './register/paperwork';
 import { UseNavSvc } from '@/core/services/use_nav';
 import { UseKitApiSvc } from '@/core/services/use_kit_api';
 import { LoginFormT } from './login/paperwork';
+import { UserSlice } from '../user/slice';
 
 type RegisterResT = {
   accessToken: string;
@@ -25,6 +26,7 @@ type LoginResT = {
 })
 export class UseAuthApiSvc extends UseKitApiSvc {
   public readonly authSlice: AuthSlice = inject(AuthSlice);
+  public readonly userSlice: UserSlice = inject(UserSlice);
 
   public register(body: RegisterFormT): ObsResT<RegisterResT> {
     return this.api
@@ -62,6 +64,8 @@ export class UseAuthApiSvc extends UseKitApiSvc {
         this.useStorage.removeItem('accessToken');
         this.authSlice.setLogged(false);
         this.useNav.replace('/', { from: null });
+
+        this.userSlice.setUser(null);
       }),
     );
   }

@@ -1,0 +1,3353 @@
+{
+  "timestamp": "2026-06-12 09:19:57",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:19:57",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:19:58",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2NTY1fQ.sLWli5teNNkVqoFbq_jnBIzTufrEJv8FlWQmM-rZBGE",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:19:58",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2NTY1fQ.sLWli5teNNkVqoFbq_jnBIzTufrEJv8FlWQmM-rZBGE",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:01",
+  "method": "POST",
+  "path": "/api/v1/auth/logout",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2NTY1fQ.sLWli5teNNkVqoFbq_jnBIzTufrEJv8FlWQmM-rZBGE",
+    "Cache-Control": "no-cache",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=0"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:06",
+  "method": "POST",
+  "path": "/api/v1/auth/login",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/auth/login",
+    "Content-Length": "71",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=0"
+  },
+  "routeParams": {},
+  "body": {
+    "email": "matveevalexander470@gmail.com",
+    "password": "Non_indietro_29@"
+  }
+}
+{
+  "timestamp": "2026-06-12 09:20:14",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:14",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:14",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:14",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:14",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:14",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:19",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:19",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:19",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:19",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:20",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:20",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:26",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:26",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:26",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:26",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:26",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:26",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:32",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:32",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:32",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:32",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:32",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:36",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:36",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:36",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:36",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:36",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:36",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDM3fQ.06yc8Ss_Owgh9kxxYF2gMo7n0oKsJcyEjy1wIoKF7Kc",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:46",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:56",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:56",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:56",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:56",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:56",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:20:56",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:02",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:02",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:02",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:02",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:03",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:03",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:08",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:08",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:08",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:08",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:08",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:08",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:14",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:14",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:14",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:14",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:14",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:14",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:21",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MDc2fQ.RLoIhw-7SiIUKgcDnrshaU5ptS8_CnfaCi9p4Qo-fyM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=wgtI6S6rh3P9fkrtEys3SfYmRZNCwfrsXSJoffcg07GGAQDt3VuZA0Edg%2FzcTrru4Flmr4lF3xjGvPVeN02%2Bbw%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:22",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:21:22",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:11",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:11",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:11",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:11",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:11",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:11",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:12",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:22:12",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:03",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:03",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:03",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:03",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:03",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:03",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:05",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:05",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:06",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:06",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:06",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/auth/login",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:06",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/auth/login",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:06",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:06",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:07",
+  "method": "POST",
+  "path": "/api/v1/auth/login",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/auth/login",
+    "Content-Length": "71",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=0"
+  },
+  "routeParams": {},
+  "body": {
+    "email": "matveevalexander470@gmail.com",
+    "password": "Non_indietro_29@"
+  }
+}
+{
+  "timestamp": "2026-06-12 09:23:14",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:14",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:14",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:14",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:14",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjE3fQ.kY7Qn1fd6w67VMNZoeCjeZ-r7H4Gr518H2ClSeExdos",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:14",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjE3fQ.kY7Qn1fd6w67VMNZoeCjeZ-r7H4Gr518H2ClSeExdos",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:23",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:29",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:29",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:29",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:29",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:29",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:29",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:34",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:34",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:34",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:34",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:34",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:23:34",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:02",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjMzfQ.G0qX8K5LpEbIBkVBwJeKt1q-W2NG4990HC4BlQEzTOE",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:03",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:03",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:09",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:09",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:09",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:09",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:09",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:09",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:19",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:19",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:19",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:19",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:19",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:19",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "GET",
+  "path": "/api/v1/auth/protected",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im1hdHZlZXZhbGV4YW5kZXI0NzBAZ21haWwuY29tIiwiZXhwIjoxNzgxMjU2MjczfQ.fHKt2wqxhw7CDhxrHt8kPc-YgMXgNFboOhdbGGcIxPM",
+    "Cache-Control": "no-cache",
+    "Cookie": "refreshToken=ZRepKTVAqy%2FdGsJ774EvX4h6PVfVQsXWkApFs6lEKjbpA7NrZcFYqZNL2eH2qP5ax4vHuY%2B%2FlMWQXKJrpiTW3A%3D%3D",
+    "Origin": "https://localhost",
+    "Pragma": "no-cache",
+    "Referer": "https://localhost/protected",
+    "Content-Length": "0",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "Priority": "u=4"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "GET",
+  "path": "/api/v1/user",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}
+{
+  "timestamp": "2026-06-12 09:24:42",
+  "method": "POST",
+  "path": "/api/v1/auth/refresh",
+  "query": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "Upgrade",
+    "Host": "localhost",
+    "User-Agent": "node",
+    "Accept-Encoding": "br, gzip, deflate",
+    "Accept-Language": "*",
+    "Content-Length": "0",
+    "sec-fetch-mode": "cors"
+  },
+  "routeParams": {},
+  "body": null
+}

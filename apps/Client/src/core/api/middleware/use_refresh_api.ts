@@ -1,7 +1,9 @@
 import { OrNone } from '@/common/types/general';
+import { UseNavSvc } from '@/core/services/use_nav';
 import { UseStorageSvc } from '@/core/services/use_storage';
 import { UseAuthApiSvc } from '@/features/auth/api';
 import { AuthSlice } from '@/features/auth/slice';
+import { UserSlice } from '@/features/user/slice';
 import {
   HttpErrorResponse,
   HttpHandlerFn,
@@ -18,6 +20,8 @@ export const useRefreshApi: HttpInterceptorFn = (
   const authApi = inject(UseAuthApiSvc);
   const authSlice = inject(AuthSlice);
   const useStorage = inject(UseStorageSvc);
+  const useNav = inject(UseNavSvc);
+  const userSlice = inject(UserSlice);
 
   const authReq = req.clone();
 
@@ -49,7 +53,9 @@ export const useRefreshApi: HttpInterceptorFn = (
 
         catchError((err: HttpErrorResponse) => {
           authSlice.setLogged(false);
+          userSlice.setUser(null);
           useStorage.removeItem('accessToken');
+          useNav.replace('/auth/login', { from: null });
 
           return throwError(() => err);
         }),

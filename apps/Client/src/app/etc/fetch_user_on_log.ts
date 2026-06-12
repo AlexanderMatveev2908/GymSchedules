@@ -14,13 +14,14 @@ export class UseFetchUserOnLogSvc extends UseInjCtxHk {
 
   public getUser(): void {
     this.useEffect(() => {
-      if (this.authSlice.isLogged()) {
-        this.userApi.getUser().subscribe((res) => {
-          this.userSlice.setUser(res.data.user);
-        });
-      } else {
-        this.userSlice.setUser(null);
-      }
+      // if (this.authSlice.isLogged()) {
+      this.userApi.getUser().subscribe((res) => {
+        this.userSlice.setUser(res.data.user);
+        this.authSlice.setLogged(!!res.data.user);
+      });
+      // } else {
+      // this.userSlice.setUser(null);
+      // }
     });
   }
 }
